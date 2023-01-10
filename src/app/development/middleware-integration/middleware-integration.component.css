@@ -1,0 +1,25 @@
+.technologyMiddlewareServices {
+    padding-left: 53px;
+}
+
+.img-fluides {
+    max-width: 100%;
+    height: auto;
+}
+
+.mobile {
+    display: none;
+}
+
+.laptop {
+    display: block;
+}
+
+@media only screen and (max-width:992px) {
+    .mobile {
+        display: block;
+    }
+    .laptop {
+        display: none;
+    }
+}

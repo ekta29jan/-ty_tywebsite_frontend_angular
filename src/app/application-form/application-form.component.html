@@ -1,0 +1,75 @@
+<section class="section">
+    <div class="p-3">
+        <h2 class="text-center">If you are a visionary, our company is the place for you! </h2>
+        <h3 class="text-center"><span class="text-color">Join us</span>, and we can accomplish great things together.</h3>
+        <div class="mydivider1 mb-3"></div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 offset-0 col-sm-8 offset-sm-2 col-md-12 offset-md-0 col-lg-8 offset-lg-2">
+                <div class="card application-container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="application-img" src="../../assets/images/new-images/Application submission section.png" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <form action="" [formGroup]="applicationForm" *ngIf="!toster">
+                                <div class="form-group ">
+                                    <label for="">Resume/CV <sup class="text-danger">*</sup></label><br>
+                                    <input type="file" class="file-upload-button" style="width: 100%;" accept="application/pdf,application/vnd.ms-excel" formControlName="file" (change)="onUploadingCaseStudies($event)" aria-label="Text input with radio button">
+                                    <div class="text-danger" *ngIf="(isSubmit || applicationForm.controls.file.touched) && applicationForm.controls.file.errors?.required"><small>Upload Resume is Mandatory</small></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Full name <sup class="text-danger">*</sup></label>
+                                    <input type="text" [ngClass]="{'invalidBorder' : (isSubmit || applicationForm.controls.fullName.touched) && applicationForm.controls.fullName.errors }" class="form-control" formControlName="fullName" aria-label="Text input with radio button">
+                                    <div class="text-danger" *ngIf="(isSubmit || applicationForm.controls.fullName.touched) && applicationForm.controls.fullName.errors?.required"><small>Full name is Mandatory</small></div>
+                                    <div class="text-danger" *ngIf="(isSubmit || applicationForm.controls.fullName.touched) && applicationForm.controls.fullName.errors?.pattern"><small>Provide Valid Name(Only Alphabets are allowed)</small></div>
+                                    <div class="text-danger" *ngIf="(isSubmit || applicationForm.controls.fullName.touched) && applicationForm.controls.fullName.errors?.maxlength"><small>Only 50 characters allowed.</small></div>
+                                </div>
+                                <div class="form-group">
+                                    <label type="email" for="">Email <sup class="text-danger">*</sup></label>
+                                    <input type="email" [ngClass]="{'invalidBorder' : (isSubmit || applicationForm.controls.emailId.touched) && applicationForm.controls.emailId.errors }" class="form-control" formControlName="emailId" aria-label="Text input with radio button">
+                                    <div class="text-danger" *ngIf="(isSubmit || applicationForm.controls.emailId.touched)&& applicationForm.controls.emailId.errors?.required"><small>Email is Mandatory</small></div>
+                                    <div class="text-danger" *ngIf="(isSubmit || applicationForm.controls.emailId.touched) && applicationForm.controls.emailId.errors?.pattern"><small>Provide Valid Email</small></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Phone <sup class="text-danger">*</sup></label>
+                                    <input type="tel" [ngClass]="{'invalidBorder' : (isSubmit || applicationForm.controls.phoneNo.touched) && applicationForm.controls.phoneNo.errors }" class="form-control" formControlName="phoneNo" (keypress)="keyPressNumbers($event)" aria-label="Text input with radio button">
+                                    <div class="text-danger" *ngIf="(isSubmit || applicationForm.controls.phoneNo.touched) && applicationForm.controls.phoneNo.errors?.required"><small>Phone Number is Mandatory</small></div>
+                                    <div class="text-danger" *ngIf="(isSubmit || applicationForm.controls.phoneNo.touched) && applicationForm.controls.phoneNo.errors?.pattern"><small>Provide Valid Phone Number</small></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Current company <sup class="text-danger">*</sup></label>
+                                    <input type="text" [ngClass]="{'invalidBorder' : (isSubmit || applicationForm.controls.currentCompany.touched) && applicationForm.controls.currentCompany.errors }" class="form-control" formControlName="currentCompany" aria-label="Text input with radio button">
+                                    <div class="text-danger" *ngIf="(isSubmit || applicationForm.controls.currentCompany.touched) && applicationForm.controls.currentCompany.errors?.required"><small>Current company  is Mandatory</small></div>
+                                    <div class="text-danger" *ngIf="(isSubmit || applicationForm.controls.currentCompany.touched) && applicationForm.controls.currentCompany.errors?.maxlength"><small>Enter Vaild Current company name.</small></div>
+                                    <div class="text-danger" *ngIf="(isSubmit || applicationForm.controls.currentCompany.touched) && applicationForm.controls.currentCompany.errors?.pattern"><small>Enter Vaild Current company name.</small></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">ADDITIONAL INFORMATION</label>
+                                    <textarea class="form-control" formControlName="additionalInfo" aria-label="With textarea"></textarea>
+                                </div>
+                                <div class="text-center">
+                                    <re-captcha data-size="compact" (resolved)="resolved($event)" class="recaptcha" errorMode="handled" formControlName="recaptcha" [siteKey]='key'></re-captcha>
+                                </div>
+                                <div class="text-center my-3">
+                                    <button type="submit" class="btn submitBtn" [disabled]="applicationForm.invalid" style="background-color: rgb(21 99 139); color: white;" (click)="onSubmit(applicationForm)">SUBMIT APPLICATION</button>
+                                </div>
+                            </form>
+                            <div class="text-center  d-flex justify-content-center align-items-center" *ngIf='showLoadingIndicator'>
+                                <img src="../../assets/images//Spinner-2.svg" alt="Spinner" class="spinner" style="position: relative;">
+                            </div>
+                            <div class="mt-5" *ngIf="toster">
+                                <div class="card  m-auto" style="width: 80% ; ">
+                                    <div class="card-body" style=" text-align: center; font-size: large;">
+                                        {{errormessage}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

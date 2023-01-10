@@ -1,0 +1,50 @@
+.application-img {
+    position: relative !important;
+    height: 100%;
+    width: 100%;
+}
+
+.section {
+    margin-top: 60px;
+}
+
+
+/* .application .form-group {
+    padding: 0px;
+} */
+
+input[type="file"]::file-selector-button {
+    background-color: rgb(21 99 139) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 4px !important;
+    cursor: pointer !important;
+}
+
+.application-container {
+    border: 1px solid #EADDF1;
+    border-radius: 6px;
+    width: 100%;
+    box-shadow: 1px 1px 7px 1px #EADDF1;
+    padding: 10px;
+}
+
+.spinner {
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 767px) {
+    .section {
+        margin-top: 0px;
+        padding: 10px 0px;
+    }
+    .recaptcha {
+        transform: scale(0.77);
+        -webkit-transform: scale(0.77);
+        transform-origin: 0 0;
+        -webkit-transform-origin: 0 0;
+    }
+}

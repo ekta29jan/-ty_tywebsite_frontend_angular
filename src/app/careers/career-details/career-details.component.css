@@ -1,0 +1,60 @@
+h3 {
+    text-decoration: solid !important;
+}
+
+.maker-icon {
+    font-size: 30px !important;
+}
+
+.apply-button:hover {
+    background-color: orange !important;
+    border-color: white !important;
+}
+
+h2 {
+    font-size: 25px !important;
+}
+
+@media only screen and (max-width: 767px) {
+    .list2 {
+        padding-left: 17px !important;
+    }
+    .home3 {
+        margin-left: 17px;
+    }
+    .apply-button {
+        margin-left: 17px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .applybtn {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .home3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .home3 {
+        margin-left: 0px !important;
+    }
+    .careersBreadcrums {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 358px) {
+    .careersBreadcrums {
+        font-size: 10px;
+    }
+}

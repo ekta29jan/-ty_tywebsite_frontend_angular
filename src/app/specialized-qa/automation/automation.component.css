@@ -1,0 +1,380 @@
+#managed {
+    -webkit-animation: mover 1s infinite alternate;
+    animation: mover 1s infinite alternate;
+}
+
+#managed {
+    -webkit-animation: mover 1s infinite alternate;
+    animation: mover 1s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+
+/* team in action */
+
+.home-info-grey {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f1f1f2
+}
+
+.home-info-grey h2 {
+    color: var(--black);
+    font-weight: 700;
+    font-size: 16px;
+    font-style: italic
+}
+
+.home-info-grey p {
+    color: #626163;
+    font-weight: 500;
+    font-size: 16px
+}
+
+.drop-cap {
+    margin-right: 25px;
+    float: left;
+    text-align: center;
+    line-height: 1;
+    font-size: 50px
+}
+
+.drop-cap-letter {
+    color: orange;
+    font-size: 90px;
+    font-weight: 700
+}
+
+.drop-cap-text {
+    color: #231833;
+    font-size: 34px;
+    font-weight: 500
+}
+
+.accordion_two_section {
+    background: #f7f7f7
+}
+
+.ptb-100 {
+    padding-top: 60px;
+    padding-bottom: 60px
+}
+
+.accordionTwo .panel-group {
+    margin-bottom: 0
+}
+
+.accordionTwo .panel {
+    background-color: transparent;
+    box-shadow: none;
+    border-bottom: 10px solid transparent;
+    border-radius: 0;
+    margin: 0
+}
+
+.accordionTwo .panel-default {
+    border: 0
+}
+
+.accordionTwo .panel-default>.panel-heading {
+    background: orange;
+    border-radius: 0px;
+    border-color: #4385f5
+}
+
+.accordion-wrap .panel-heading {
+    padding: 0px;
+    border-radius: 0px
+}
+
+.panel-title strong {
+    font-size: 20px;
+}
+
+.collapsed strong {
+    font-size: 16px;
+}
+
+
+/* .panel-collapse .collapse .show {
+    columns: green !important;
+} */
+
+.panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: inherit
+}
+
+.accordionTwo .panel .panel-heading a.collapsed {
+    color: #999999;
+    background-color: #fff;
+    display: block;
+    padding: 12px 20px
+}
+
+.accordionTwo .panel .panel-heading a {
+    display: block;
+    padding: 12px 20px;
+    color: white;
+}
+
+.accordion-wrap .panel .panel-heading a {
+    font-size: 14px
+}
+
+.accordionTwo .panel-group .panel-heading+.panel-collapse>.panel-body {
+    border-top: 0;
+    padding-top: 0;
+    padding: 20px 20px 20px 30px;
+    background: #f0f2f4;
+    color: black;
+    font-size: 14px;
+    line-height: 24px
+}
+
+.accordionTwo .panel .panel-heading a:after {
+    content: "\2212";
+    color: orange;
+    background: #fff;
+}
+
+.accordionTwo .panel .panel-heading a:after,
+.accordionTwo .panel .panel-heading a.collapsed:after {
+    font-size: 14px;
+    float: right;
+    width: 21px;
+    display: block;
+    height: 21px;
+    line-height: 21px;
+    text-align: center;
+    border-radius: 50%;
+    color: #FFF
+}
+
+.accordionTwo .panel .panel-heading a.collapsed:after {
+    content: "\2b";
+    color: #fff;
+    background-color: #DADADA
+}
+
+.panel-heading a.collapsed:hover:after {
+    content: "\2b";
+    color: #297094;
+    background-color: #297094 !important;
+}
+
+.panel .panel-heading a:hover:after {
+    content: "\2212";
+    color: #297094;
+    background: #297094 !important;
+}
+
+.accordionTwo .panel .panel-heading a:after {
+    content: "\2212";
+    color: orange;
+    background: #dadada
+}
+
+a:link {
+    text-decoration: none
+}
+
+.card-header {
+    cursor: pointer;
+}
+
+.card-header {
+    background-color: white !important;
+    padding-left: 0px !important;
+    border-bottom: 2px solid black !important;
+    padding-right: 0px !important;
+    cursor: pointer !important;
+}
+
+.accordion>.card {
+    border: none;
+}
+
+.row-1 p {
+    font-size: calc(12px + (14 - 12) * ((100vw - 360px) / (1600 - 360))) !important;
+    text-align: center;
+    color: #2CB8FE
+}
+
+h5 {
+    font-size: calc(16px + (22 - 16) * ((100vw - 360px) / (1600 - 360))) !important
+}
+
+li {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    /* cursor: pointer */
+}
+
+.carousel-indicators li {
+    cursor: pointer;
+    border-radius: 50% !important;
+    width: 14px;
+    height: 14px;
+    opacity: 0.8;
+    margin: -30px 15px 0px 15px !important;
+    color: #333;
+    background-color: #333 !important;
+    top: 50px !important;
+    position: relative;
+    font-weight: 700;
+}
+
+.carousel-inner {
+    border-radius: 15px !important
+}
+
+.card {
+    color: #383431 !important;
+    background-color: #FFFFFF !important
+}
+
+.bonify {
+    font-weight: 600;
+    letter-spacing: 2px !important;
+    cursor: pointer
+}
+
+.bottom-row {
+    color: #aaaaaa
+}
+
+a:hover {
+    color: #297094 !important;
+    text-decoration: none !important;
+    outline: 0;
+}
+
+i {
+    font-size: 25px !important;
+    margin-left: calc(15px + (24 - 20) * ((100vw - 360px) / (1600 - 360))) !important;
+    cursor: pointer
+}
+
+.carousel-indicators li.active {
+    color: black !important;
+    background-color: orange !important;
+    opacity: 0.9;
+}
+
+blockquote {
+    font-size: 18px;
+    /* font-style: italic; */
+    margin: 0.25em 0;
+    padding: 0.35em 40px;
+    line-height: 1.45;
+    position: relative;
+    color: #383838;
+}
+
+blockquote:before {
+    display: block;
+    padding-left: 10px;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: 0px;
+    top: -25px;
+    color: #7a7a7a;
+}
+
+blockquote::after {
+    content: '\201D';
+    color: #7a7a7a;
+    font-size: 80px;
+    position: absolute;
+    top: 30px;
+    right: 402px;
+}
+
+blockquote cite {
+    color: #999999;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+
+blockquote cite:before {
+    content: "\2014 \2009";
+}
+
+blockquote cite::after {
+    content: "\2014 \2009";
+}
+
+.imgs {
+    width: 25px;
+    margin-top: 18px;
+}
+
+.mobile {
+    display: none;
+}
+
+.laptop {
+    display: block;
+}
+
+@media only screen and (max-width:425px) {
+    .imgs {
+        margin-top: -17px !important;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .mobile {
+        display: block;
+    }
+    .laptop {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .imgs {
+        margin-top: -17px !important;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .imgs {
+        margin-top: 17px;
+        margin-left: -10px !important;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .imgs {
+        margin-top: -17px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .servicesDetails {
+        font-size: 14px;
+    }
+}

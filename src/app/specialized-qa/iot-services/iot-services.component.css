@@ -1,0 +1,133 @@
+.card1 {
+    border: none;
+    border-radius: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.card1:hover {
+    transform: scale(1.1);
+    /* background-color: gray !important; */
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    /* cursor: pointer; */
+    background-image: linear-gradient(-45deg, #34b5bf 0%, #210c59 100%);
+    color: white !important;
+}
+
+.card1:hover .dummytext {
+    color: white !important;
+}
+
+.email {
+    font-size: 14px;
+    /* margin-left: 25px; */
+    font-weight: bold;
+    padding: 8px !important
+}
+
+.dummytext {
+    font-size: 13px;
+    font-weight: normal;
+    /* color: #848590; */
+    color: black;
+    text-align: justify !important;
+}
+
+.our-services {
+    /* margin-top: 50px;
+    padding-bottom: 30px; */
+    overflow-y: auto;
+    padding: 0 50px;
+    height: 300px !important;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: all .4s ease-in-out;
+    box-shadow: 0 0 25px 0 rgba(20, 27, 202, .17)
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.our-services .icon {
+    margin-bottom: -21px;
+    transform: translateY(-50%);
+    text-align: center
+}
+
+.our-services:hover h4,
+.our-services:hover p {
+    color: #fff
+}
+
+.settings:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    /* cursor: pointer; */
+    background-image: linear-gradient(-45deg, #34b5bf 0%, #210c59 100%)
+}
+
+.ssl:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #8d40fb 0%, #5a57fb 100%)
+}
+
+.database:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #27b88d 0%, #22dd73 100%)
+}
+
+.folded-corner:hover .text {
+    visibility: visible;
+    color: white;
+}
+
+.Services-tab {
+    margin-top: 50px;
+}
+
+.tagline {
+    margin-top: 20px !important;
+    margin-bottom: 20px!important;
+}
+
+.settings:hover .hoverimg {
+    display: block;
+}
+
+.settings:hover .servicesimg {
+    display: none;
+}
+
+.hoverimg {
+    display: none;
+    width: 70px;
+    height: 70px;
+    position: relative;
+}
+
+.servicesimg {
+    display: block;
+    width: 70px;
+    height: 70px;
+    position: relative;
+}
+
+.card-header {
+    cursor: pointer;
+}
+
+.card-header {
+    background-color: white !important;
+    padding-left: 0px !important;
+    border-bottom: 2px solid black !important;
+    padding-right: 0px !important;
+    cursor: pointer !important;
+}
+
+.accordion>.card {
+    border: none;
+}

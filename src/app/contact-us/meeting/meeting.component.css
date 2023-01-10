@@ -1,0 +1,192 @@
+.wrapper {
+  background-image: url('../../../assets/images/Group 1157.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #FFF8EC;
+}
+
+.ladyImg {
+  background-image: url('../../../assets/images/Group 1156.png');
+  background-repeat: no-repeat;
+  background-size: 20rem;
+  height: 21rem;
+  width: 20rem;
+  margin-top: 19rem;
+  z-index: 1;
+  transform: translateX(-70%);
+}
+
+.meeting-card {
+  height: 32.62rem;
+  width: 20.5rem !important;
+  margin-bottom: 50px !important;
+  border-radius: 10px;
+  background-color: #363D46;
+  position: absolute;
+  top: 30px;
+}
+
+.details {
+  margin-top: 150px;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-weight: 1000 !important;
+  font-size: 50px !important;
+  text-transform: none !important;
+}
+
+h4 {
+  font-size: 35px !important;
+}
+
+h6 {
+  font-size: 18px !important;
+}
+
+.firstPic {
+  height: 100px;
+  border-radius: 50%;
+  margin-left: 11px;
+  margin-top: 8px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.requiredField {
+  color: red;
+  border: red 2px solid;
+}
+
+.required {
+  color: red;
+}
+
+.size {
+  width: 18.5rem;
+  position: absolute;
+  z-index: 3;
+}
+
+.arrowBtn {
+  color: white;
+  width: 30px;
+  border: none;
+  height: 30px;
+  position: relative;
+  top: 3rem;
+  background-color: #363D46;
+}
+
+.formDiv {
+  height: 26rem;
+  overflow-y: auto;
+}
+
+.changeIndex {
+  z-index: 2;
+}
+
+.btnGroup {
+  width: 10rem;
+  height: 3.25rem;
+}
+
+.timeGroup {
+  z-index: 3;
+  height: 2rem;
+  width: 17rem;
+  margin-bottom: 0.875rem;
+}
+
+.btn-group {
+  height: 2rem;
+  width: 17rem;
+}
+
+.timediv {
+  height: 18rem;
+  overflow: auto;
+  width: 20rem;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 4;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.marginCSS {
+  margin-top: 13rem;
+}
+
+.main-container1 {
+  height: 40rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.indexbtn {
+  z-index: 3;
+}
+
+.btnMargin {
+  margin: 0rem 1rem;
+  padding: 0rem 2rem;
+}
+
+.btnBackDiv {
+  margin: 0rem 1rem;
+  padding: 0rem 2rem;
+  background: transparent;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.demo-inline-calendar-card {
+  width: 16.5rem;
+  border-radius: 15px;
+  margin-left: 2rem;
+  padding: 0px;
+  position: absolute;
+  z-index: 3;
+}
+
+:host ::ng-deep .mat-calendar-period-button {
+  order: 2 !important;
+}
+
+:host ::ng-deep button.mat-focus-indicator.mat-calendar-next-button.mat-icon-button.mat-button-base {
+  order: 3;
+}
+
+:host ::ng-deep .mat-calendar-spacer {
+  margin-right: 2rem;
+  flex: 0 0 0 !important;
+}
+
+:host ::ng-deep .mat-calendar-table-header {
+  color: white;
+  background-color: gray;
+}
+
+:host ::ng-deep .mat-calendar-content {
+  padding: 0px 0px 0px 0px !important;
+}
+
+:host ::ng-deep .mat-calendar-header {
+  padding: 1px 8px 0 8px !important;
+}
+@media only screen and (max-width: 1030px) {
+ .ladyImg{
+      display: none;
+  }
+}

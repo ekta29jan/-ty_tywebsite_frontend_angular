@@ -1,0 +1,20 @@
+.mobile {
+    display: none;
+}
+
+.laptop {
+    display: block;
+}
+
+.img-fluid {
+    position: relative;
+}
+
+@media only screen and (max-width:992px) {
+    .mobile {
+        display: block;
+    }
+    .laptop {
+        display: none;
+    }
+}

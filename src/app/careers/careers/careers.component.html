@@ -1,0 +1,178 @@
+<section>
+    <div class="careers-img">
+        <img src="../../../assets/images/new-images/15.png" width="100%" style="position: relative;" alt="locations map">
+    </div>
+</section>
+<div id="main-wrapper">
+    <section>
+        <div class="container pt-4" id="job">
+            <p>TechnoElevate is a group of forward-thinking and optimistic project managers, IT professionals, industry experts, software architects, developers, testers, maintenance engineers, and so on. They are all unique, but they share a few characteristics:
+                talent, a strong desire for self-improvement, and willingness to contribute to the company's and its client's success.</p>
+            <h3 class="py-2 mb-1"><u>We say “no” to discrimination</u></h3>
+            <p>We strongly support the abolition of all forms of workplace discrimination and the promotion of equal opportunities for all. TechnoElevate is a truly diverse workplace.
+            </p>
+        </div>
+        <div class="container" id="Open position">
+            <div class="title">
+                <h2 style="text-decoration: solid;">Open Positions: 73</h2>
+            </div>
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <div class="d-flex career-header justify-content-between" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <div class="d-flex align-items-center">
+                                    <h2 style="text-decoration: solid;">Software development</h2>
+                                </div>
+                                <div class="d-flex align-items-center down-arrow-icon"><i class="fa fa-solid fa-angle-down"></i></div>
+                            </div>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <div class="career-container">
+                                <a (click)="careerdata('software',i)" class="vacancy-link" *ngFor="let vacancy of listOfCareers;index as i">
+                                    <h5 class="vacancy-link-title">{{vacancy?.role}}</h5>
+                                    <div class="vacancy-link-cities">
+                                        <span class="vacancy-link-city">India</span>
+                                        <span class="vacancy-link-city"><i class="fa fa-home px-2"></i> Office/Remote</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <div class="d-flex  justify-content-between career-header collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <div>
+                                    <h2 style="text-decoration:solid;">BUSINESS DEVELOPMENT</h2>
+                                </div>
+                                <div class="d-flex align-items-center down-arrow-icon"> <i class="fa fa-solid fa-angle-down"></i></div>
+                            </div>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <div class="card-body">
+                                <div class="career-container">
+                                    <a (click)="careerdata('Business_Development',i)" class="vacancy-link" *ngFor="let vacancy of BusinessDevelopment;index as i">
+                                        <h5 class="vacancy-link-title">{{vacancy?.role}}</h5>
+                                        <div class="vacancy-link-cities">
+                                            <span class="vacancy-link-city">India</span>
+                                            <span class="vacancy-link-city"><i class="fa fa-home px-2"></i> Office/Remote</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <div class="d-flex justify-content-between career-header collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <div>
+                                    <h2 style="text-decoration:solid;">RECRUITMENT</h2>
+                                </div>
+                                <div class="d-flex align-items-center down-arrow-icon">
+                                    <i class="fa fa-solid fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <div class="card-body">
+                                <div class="career-container">
+                                    <a (click)="careerdata('IT_Recruiter',i)" class="vacancy-link" *ngFor="let vacancy of Recruiter;index as i">
+                                        <h5 class="vacancy-link-title">{{vacancy?.role}}</h5>
+                                        <div class="vacancy-link-cities">
+                                            <span class="vacancy-link-city">India</span>
+                                            <span class="vacancy-link-city"><i class="fa fa-home px-2"></i> Office/Remote</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="card">
+                  <div class="card-header" id="headingFour">
+                      <h5 class="mb-0">
+                          <div class="d-flex justify-content-between career-header collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                              <div>
+                                  <h2 style="text-decoration:solid;">SUIT UP</h2>
+                              </div>
+                              <div class="d-flex align-items-center down-arrow-icon">
+                                  <i class="fa fa-solid fa-angle-down"></i>
+                              </div>
+                          </div>
+                      </h5>
+                  </div>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                      <div class="card-body">
+                          <div class="card-body">
+                              <div class="career-container">
+                                  <a (click)="careerdata('Suit_Up',i)" class="vacancy-link" *ngFor="let vacancy of SuitUp;index as i">
+                                      <h5 class="vacancy-link-title">{{vacancy?.role}}</h5>
+                                      <div class="vacancy-link-cities">
+                                          <span class="vacancy-link-city">India</span>
+                                          <span class="vacancy-link-city"><i class="fa fa-home px-2"></i> Office/Remote</span>
+                                      </div>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="py-4">
+                <h3 class="py-2" style="text-decoration: solid;">
+                    <u>TechnoElevate’s Four Pillars of Influence</u>
+                </h3>
+                <h3 class=" mt-3 mb-1" style="text-decoration: solid;">Customers</h3>
+                <p>We build relationships that make a difference in the lives of our customers.</p>
+                <h3 class="py-1 mb-1" style="text-decoration: solid;">Peers</h3>
+                <p>We value our employees, encourage their growth, and recognize and reward their accomplishments.</p>
+                <h3 class="py-1 mb-1" style="text-decoration: solid;">Family and Self</h3>
+                <p>We personally care about our associate's and their familie's well-being and work-life balance.</p>
+                <h3 class="py-1 mb-1" style="text-decoration: solid;">Society </h3>
+                <p>We implement vital initiatives that benefit the underprivileged and foster a culture of giving back to society.</p>
+            </div>
+            <div class="upskills" id="Upskill Programme">
+                <div class="row">
+                    <div class="col col-12 col-md-12">
+                        <h2 class="tagline" style=" letter-spacing: 0; font-size: 40px; text-align: center;"> Upskill <span style="color: orange;"> Programme</span></h2>
+                        <div class="mydivider1 mb-3"></div>
+                    </div>
+                </div>
+                <p>Our teams remain updated on latest technological advancements. They are also quite often among the first to try out cutting-edge advanced technologies, which results in the excellent solutions. We are grateful to have had the opportunity
+                    to work with some of the most qualified professionals. We believe that a company's success is determined by its visionary team. If you are a visionary, our company is the place for you, Join us to gain the experience of working with
+                    us, and we can accomplish great things together.
+                </p>
+                <p>
+                    TechnoElevate has a well-established training programme that emphasises on-going learning and skill development. This ensures that our employees are always up to date on the latest technological advancements. We also involve them in a variety of projects
+                    that help them improve their skill sets while also exposing them to the most in-demand technology.
+                </p>
+                <h3 class="py-1 mb-1" style="text-decoration: solid;">CONTINUOUS LEARNING</h3>
+                <p>Learnability is a critical success factor at TechnoElevate. To us, continuous learning is more important than just attending a series of learning events; it is about expanding our knowledge and skills in response to the emergence of NextGen
+                    technologies. We intend to win big by investing in the continuous development of our people.
+                </p>
+                <h3 class="py-1 mb-1" style="text-decoration: solid;">RESPONSIVE LEARNING</h3>
+                <p>This perfectly describes our approach to Learning and Expertise transformation strategy-driven and strategy-driven. As we aspire to match the pace of business, we are committed to encouraging a learning culture that addresses the needs
+                    of the hour and is responsive to the evolving business ecosystem around us.
+                </p>
+                <h3 class="py-1 mb-1" style="text-decoration: solid;">LEADERSHIP LEARNING</h3>
+                <p>At TechnoElevate, the three cornerstones of a prominent leader are capability, capacity, and culture. The Leadership Development Framework enables individuals managers and leaders to gain relevant knowledge and skills to drive high performance
+                    while adhering to TechnoElevate's culture and values.
+                </p>
+                <h3 class="py-1 mb-1" style="text-decoration: solid;">PERSONALIZED LEARNING</h3>
+                <p class="pb-5">Human resources have become more consumerized as a result of digitization and employee-centered learning has been enhanced. In order to meet the needs of the digital workforce, we have used adaptive learning technologies to customize solutions
+                    that provide personalized learning experiences. This also ensures that learning is delivered on time and is available to employees when they need it.
+                </p>
+            </div>
+        </div>
+    </section>
+</div>

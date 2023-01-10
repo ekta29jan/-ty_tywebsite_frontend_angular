@@ -1,0 +1,146 @@
+<div style="height: 45px;"></div>
+<div class=" wrapper">
+
+  <div class="main-container col-md-12 row">
+
+    <div class="col-md-1"></div>
+
+    <div class="col-md-6 details">
+      <h1>Book a Meeting</h1>
+      <h4>Want to enhance your business?</h4>
+      <h4>Let's discuss how!</h4>
+      <h6>Schedule a meeting and we will be</h6>
+      <h6>happy to discuss and help you</h6>
+      <h6>reate the company of your</h6>
+      <h6>dreams!</h6>
+    </div>
+
+    <div class="col-md-5 main-container1">
+      <div class="ladyImg"></div>
+      <!-- page 1 -->
+      <div class="meeting-card">
+        <div *ngIf="pageChangeIndex[0] == index">
+          <div class="col-md-12 d-flex justify-content-center">
+            <div class="col-md-4 text-center">
+              <button type="button" class="arrowBtn" (click)="previousPhoto()">
+                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+              </button>
+            </div>
+            <div class="firstPic col-md-4">
+              <img class="firstPic" [src]="linksOfPhoto" alt="">
+            </div>
+            <div class="col-md-4 text-center">
+              <button type="button" class="arrowBtn" (click)="nextPhoto()">
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+          <div class="name text-center">
+            <h6 class=" text-light mt-2 mb-0">Schedule a meeting with</h6>
+            <h2 class=" text-light mt-0" style="margin-top: 0px !important;">{{nameOfTeam}}</h2>
+          </div>
+          <div>
+            <mat-card class="demo-inline-calendar-card">
+              <mat-calendar (click)="date()" [(selected)]="selected"></mat-calendar>
+            </mat-card>
+          </div>
+          <!-- <div class="d-flex justify-content-end">
+            <button class="btn btn-outline-light  py-0 mx-3 px-5" type="button" (click)="nextIndex()">next</button>
+          </div> -->
+        </div>
+
+        <!-- page 2 -->
+        <div class="text-center" *ngIf="pageChangeIndex[1] == index">
+          <h5 class="text-light mt-3">Approximate Time Duration?</h5>
+          <div class=" mt-3 mb-3">
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button #timeBtn1 (click)="timeBtn(1)" class="btnGroup" type="button" class="btn btn-outline-light">15
+                min</button>
+              <button #timeBtn2 (click)="timeBtn(2)" class="btnGroup" type="button" class="btn btn-outline-light">30
+                min</button>
+              <button #timeBtn3 (click)="timeBtn(3)" class="btnGroup" type="button" class="btn btn-outline-light">45
+                min</button>
+            </div>
+          </div>
+          <div>
+            <h5 class="text-light">What time works best?</h5>
+            <h6></h6>
+          </div>
+          <div class="timediv d-flex flex-column">
+            <div *ngFor="let time of timing; index as i">
+              <button (click)="timefun(i)" (click)="nextIndex()"
+                class="timeGroup btn btn-outline-light">{{time}}</button>
+            </div>
+          </div>
+
+          <div class="mt-2 d-flex justify-content-between">
+            <button class="changeIndex btn btn-outline-light btnMargin" type="button"
+              (click)="previousIndex()">Back</button>
+            <button class="btn btn-outline-light btnMargin" type="button" (click)="nextIndex()">Next</button>
+          </div>
+        </div>
+
+        <!-- page 3 -->
+        <div class=" mt-3" *ngIf="pageChangeIndex[2] == index">
+          <form class="formDiv mt-3 col-md-12" [formGroup]="meetingDetailsForm" (ngSubmit)="meetingDetailsForm">
+            <label class="text-light form-label my-0" for="fname">First Name *</label><br>
+            <input class="rounded my-0 size" type="text" formControlName="fname" id="fname"
+              [ngClass]="{'requiredField':meetingDetailsForm.controls['fname'].invalid && meetingDetailsForm.controls['fname'].touched}"><br>
+            <div *ngIf="meetingDetailsForm.controls['fname'].invalid && meetingDetailsForm.controls['fname'].touched">
+              <small class="required">*First Name Required</small>
+            </div>
+            <label class="text-light form-label my-0" for="lname">Last Name *</label><br>
+            <input class="rounded my-0 size" type="text" formControlName="lname" id="lname"
+              aria-describedby="passwordHelpBlock"
+              [ngClass]="{'requiredField':meetingDetailsForm.controls['lname'].invalid && meetingDetailsForm.controls['lname'].touched}"><br>
+            <div *ngIf="meetingDetailsForm.controls['lname'].invalid && meetingDetailsForm.controls['lname'].touched">
+              <small class="required">*Last Name Required</small>
+            </div>
+
+            <label class="text-light form-label my-0" for="email">Email Address *</label><br>
+            <input class="rounded my-0 size" type="text" formControlName="email" id="email"
+              [ngClass]="{'requiredField':meetingDetailsForm.controls['email'].invalid && meetingDetailsForm.controls['email'].touched}"><br>
+            <div *ngIf="meetingDetailsForm.controls['email'].invalid && meetingDetailsForm.controls['email'].touched">
+              <small class="required">*Enter Valid Email</small>
+            </div>
+
+            <label class="text-light form-label my-0" for="comName">Company Name *</label><br>
+            <input class="rounded my-0 size" type="text" formControlName="companyName" id="comName"
+              [ngClass]="{'requiredField':meetingDetailsForm.controls['companyName'].invalid && meetingDetailsForm.controls['companyName'].touched}"><br>
+            <div
+              *ngIf="meetingDetailsForm.controls['companyName'].invalid && meetingDetailsForm.controls['companyName'].touched">
+              <small class="required">*Company Name Required</small>
+            </div>
+            <label class="text-light form-label my-0" for="resOfVisit">Reason of visit *</label><br>
+            <textarea class="rounded my-0 size" formControlName="reasonOfVisit" id="resOfVisit" style="height: 100px"
+              [ngClass]="{'requiredField':meetingDetailsForm.controls['reasonOfVisit'].invalid && meetingDetailsForm.controls['reasonOfVisit'].touched}">
+          </textarea>
+            <div
+              *ngIf="meetingDetailsForm.controls['reasonOfVisit'].invalid && meetingDetailsForm.controls['reasonOfVisit'].touched">
+              <small class="required">*Reason of Visit</small>
+            </div>
+          </form>
+          <div class="mt-2 d-flex justify-content-between">
+            <button class="indexbtn btn btn-outline-light btnMargin" type="button"
+              (click)="previousIndex()">Back</button>
+            <button class="btn btn-outline-light btnMargin pe-1" type="button" (click)="submit()">Submit</button>
+          </div>
+        </div>
+
+        <!-- page 4 -->
+        <div class="mt-5 pt-3 col-md-12 text-center ps-5" *ngIf="pageChangeIndex[3] == index">
+          <h2 class="text-light mt-5">Thank You for</h2>
+          <div class="d-flex justify-content-center">
+            <h2 class="text-warning">Connecting</h2>
+            <h2 class="text-light">!</h2>
+          </div>
+          <h3 class="text-light">You will get an email confirmation once your meating get scheduled</h3>
+          <div>
+            <p class="text-light mb-0 pb-0 marginCSS">change of plan?</p>
+            <button (click)="backToFirst()" class="btn btn-outline-light my-0 py-0">Request to Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

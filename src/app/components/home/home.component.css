@@ -1,0 +1,363 @@
+    @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+    .section {
+        padding: 15px 0px 20px !important;
+    }
+    
+    .desktop {
+        display: block;
+    }
+    
+    .mobile {
+        display: none;
+    }
+    /* background image for slider */
+    
+    .slider {
+        background: url(" ../../../assets/images/home/Web-1920-–-1-_1_.webp") no-repeat 0% 30%;
+        background-size: cover;
+        padding: 100px 0px;
+        height: 700px;
+    }
+    /* background image  for slider */
+    
+    .slider1 {
+        background: url("../../../assets/images/home/Web-1920-–-2-_2_.webp") no-repeat 0% 30%;
+        background-size: cover;
+        padding: 100px 0px;
+        height: 700px;
+    }
+    /* background image  for slider*/
+    
+    .slider2 {
+        background: url("../../../assets/images/home/Web-1920-–-3-_1_.webp") no-repeat 0% 30%;
+        background-size: cover;
+        padding: 100px 0px;
+        height: 700px;
+    }
+    
+    .slider3 {
+        background: url("../../../assets/images/home/Web-1920-–-4-_1_.webp") no-repeat 0% 30%;
+        background-size: cover;
+        padding: 100px 0px;
+        height: 700px;
+    }
+    
+    .slider4 {
+        background: url("../../../assets/images/home/Web-1920-–-5-_1_.webp") no-repeat 0% 30%;
+        background-size: cover;
+        padding: 100px 0px;
+        height: 700px;
+    }
+    
+    .slider5 {
+        background: url("../../../assets/images/home/Web-1920-–-6-_1_.webp") no-repeat 0% 30%;
+        background-size: cover;
+        padding: 100px 0px;
+        height: 700px;
+    }
+    
+    #heading {
+        position: relative;
+        top: 180px;
+        left: 20px;
+    }
+    
+    #subheading {
+        position: relative;
+        top: 180px;
+        left: 20px;
+    }
+    /* Heading For the slider */
+    
+    .slider-heading {
+        color: #ff9800;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0;
+        font-size: 80px;
+        margin-left: 100px;
+        user-select: none;
+    }
+    /* For carousel Description */
+    
+    .slider-description {
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 25px;
+        margin-left: 100px;
+        user-select: none;
+    }
+    /* statistics */
+    /* .stat-cover {
+        width: 170px;
+        margin: 0 10px;
+    } */
+    /* For card heading in indroduction section */
+    
+    .icon-heading {
+        font-size: 16px !important;
+        font-weight: 800;
+        letter-spacing: 1px;
+        line-height: 25px;
+        font-weight: 800 !important;
+    }
+    
+    .card i {
+        font-size: 40px;
+        color: #ff9800;
+    }
+    
+    .mt-40 {
+        margin-top: -40px !important;
+    }
+    
+    .text-color {
+        color: orange;
+    }
+    /* hover style for indruction section */
+    
+    .hover-style-1:before {
+        position: absolute;
+        content: '';
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 0px;
+        transition: all 400ms ease;
+        border-color: #f5634b;
+        background: linear-gradient(#263248, #1c6c87);
+    }
+    
+    .hover-style-1 {
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .serviceImage {
+        display: block !important;
+    }
+    
+    .serviceImage1 {
+        display: none !important;
+    }
+    
+    .hover-style-1:hover .serviceImage {
+        display: none !important;
+    }
+    
+    .hover-style-1:hover .serviceImage1 {
+        display: block !important;
+    }
+    
+    .hover-style-1 h3,
+    .hover-style-1 i,
+    .hover-style-1 p,
+    .hover-style-1 a,
+    .hover-style-1 h4 {
+        position: relative;
+        transition: all 400ms ease;
+    }
+    
+    .hover-style-1:hover h3,
+    .hover-style-1:hover h4,
+    .hover-style-1:hover p {
+        color: #fff !important;
+    }
+    
+    .hover-style-1:hover:before {
+        height: 100%;
+    }
+    /* ABOUT SECTION */
+    /* for view more btn style */
+    
+    h5 {
+        font-size: 16px !important;
+        font-weight: 700;
+        color: black;
+        letter-spacing: .5;
+    }
+    
+    .box-card-img {
+        width: 100%;
+        height: 130px;
+        position: relative;
+    }
+    
+    .case-study {
+        height: 300px !important;
+        cursor: pointer;
+    }
+    /* Icon in about section */
+    
+    .icon {
+        font-size: 40px;
+        color: #ff9800;
+    }
+    
+    .icon1 {
+        font-size: 20px;
+        /* margin-right: 270px; */
+        cursor: pointer !important;
+    }
+    
+    .casestudy-icon {
+        cursor: pointer !important;
+    }
+    
+    .card-footer {
+        background-color: white !important;
+        border-top: none !important;
+    }
+    
+    .slick-prev {
+        left: 0px !important;
+    }
+    
+    .service-heading {
+        color: #232323;
+        margin: 16px 0px 24px;
+        font-weight: 700 !important;
+        /* text-transform: uppercase; */
+        font-size: 18px;
+    }
+    
+    .sub-heading {
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 20px;
+        font-weight: 700 !important;
+        color: #232323;
+    }
+    
+    h4 {
+        font-size: 18px;
+        font-weight: 700;
+        color: #232323;
+        letter-spacing: .5px;
+    }
+    /* Case study card min height */
+    
+    .case-card {
+        min-height: 340px;
+    }
+    
+    .section-title {
+        margin-bottom: 15px;
+    }
+    
+    .mx-4 {
+        margin-left: 30px !important;
+        margin-right: 30px !important;
+    }
+    /* MEDIA QUIERY */
+    /* .testimonial-background {
+        background: url('../../../assets/images/bg/test.jpg') no-repeat;
+        background-size: cover;
+        opacity: 0.9;
+        position: relative;
+    }
+
+    .testimonial-background:before {
+        background: #000 !important;
+        opacity: 0.8 !important;
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+    } */
+    
+    .slide-hover {
+        box-shadow: 1px 1px 5px rgb(110, 109, 109) !important;
+    }
+    /* .caseStudies {
+        cursor: pointer;
+    } */
+    
+    .img-relative {
+        position: relative;
+    }
+    
+    .text-logo {
+        color: #263248;
+        padding: 25px 36px;
+        font-size: 50px;
+        text-transform: capitalize;
+    }
+    
+    .text-logo:hover {
+        transform: scale(1.1);
+        transition: transform .5s;
+        z-index: 10;
+    }
+    /* .brand-logo {
+        height: 90px !important;
+        margin: 15px auto !important;
+    }
+
+    .brand-logo:hover {
+        transform: scale(1.1);
+        transition: transform .5s;
+        z-index: 1;
+    } */
+    /* .parent1 {
+        position: relative;
+        top: 90px;
+    } */
+    
+    .slides {
+        border: 1px solid black;
+        height: 140px !important;
+        margin-bottom: 20px;
+    }
+    
+    @media screen and (max-width:1080px) and (min-width:991px) {
+        .mt-55 {
+            margin-top: 0px;
+        }
+        .heading {
+            color: black;
+            font-weight: 600 !important;
+            font-size: 22px;
+        }
+    }
+    
+    @media (max-width: 1024px) {
+        .card .icon-heading {
+            font-size: 13px !important;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .slides {
+            margin-bottom: 20px !important;
+        }
+        .desktop {
+            display: none;
+        }
+        .mobile {
+            display: block;
+        }
+    }
+    
+    @media screen and (max-width:991px) and (min-width:767px) {
+        .mt-55 {
+            margin-top: 0px;
+        }
+    }
+    
+    @media screen and (max-width:768px) and (min-width:575px) {
+        .mt-55 {
+            margin-top: 0px;
+        }
+        .slick-next:before {
+            margin-left: 30px !important;
+        }
+    }
+    
+    @media screen and (max-width:576px) and (min-width:350px) {
+        .mt-55 {
+            margin-top: 0px;
+        }
+    }

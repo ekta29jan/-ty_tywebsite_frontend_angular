@@ -1,0 +1,247 @@
+/* For footer */
+
+.footer-pd {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #dadee1;
+}
+
+.img {
+    position: relative;
+    bottom: 290px;
+    margin-left: -10px;
+    margin-top: 10px;
+    width: 100% !important;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footerdiv {
+    position: relative;
+    bottom: 30px;
+    padding: 7px;
+}
+
+.footer-description1 {
+    position: relative;
+    bottom: 20px;
+    font-size: 15px;
+    /* text-align: justify !important; */
+}
+
+.footer-container {
+    width: 90%;
+    margin: auto;
+}
+
+
+/* Line height  */
+
+.lh-30 {
+    line-height: 30px;
+}
+
+
+/* For Email icon (container) */
+
+.contact {
+    position: fixed;
+    right: -1px;
+    bottom: 260px;
+    z-index: 99999;
+    cursor: pointer;
+    background: #dee2e6;
+    border-radius: 5px 0 0 5px;
+}
+
+
+/* list type in social media section */
+
+li.list-no {
+    list-style-type: none;
+    margin-left: -38px;
+}
+
+
+/* icons font style */
+
+.icon-font {
+    font-size: 21px !important;
+}
+
+
+/* Footer Logo style */
+
+.footer-logo {
+    font-size: 14px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+/* Footer Heading  */
+
+.footer-heading {
+    color: #232323;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+}
+
+
+/* Footer menu items on mouseover */
+
+.footer-menu li:hover {
+    color: orange;
+    opacity: 1;
+}
+
+
+/* For All list of items in the footer */
+
+.footer-menu li a,
+.footer-description {
+    color: #212529 !important;
+    font-size: 14px !important;
+    margin-top: 8px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 2;
+}
+
+
+/* For Email icon button */
+
+.contact-btn {
+    padding: 10px 11px 5px;
+    background: #ff9800;
+    border: none;
+}
+
+
+/* For Social medial icons */
+
+.icon-font {
+    color: #263248;
+}
+
+.footer-socials li a {
+    color: #263248;
+    font-size: 24px;
+    padding: 9px;
+}
+
+.contact {
+    position: fixed;
+    right: -3px;
+    bottom: 234px;
+    z-index: 99999;
+    cursor: pointer;
+    background: #dee2e6;
+    border-radius: 5px 0 0 5px;
+}
+
+
+/* For social icons section (main container) */
+
+.social {
+    position: fixed;
+    left: 0;
+    bottom: 90px;
+    z-index: 99999;
+    cursor: pointer;
+    background: #ff9800;
+    padding-left: 0px;
+}
+
+
+/* Email-icon button on mouse over */
+
+.icon-font:hover {
+    color: white !important;
+}
+
+
+/* For Form style */
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="tel"],
+textarea {
+    box-shadow: none;
+    height: 50px;
+    outline: none;
+    font-size: 12px;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus {
+    box-shadow: none;
+    border: 1px solid #f5634b;
+}
+
+.form-control {
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border: 1px solid #f5634b;
+}
+
+.modal-title {
+    font-weight: 700;
+    text-align: center !important;
+}
+
+.mt-45 {
+    margin-top: 44px;
+}
+
+button:focus {
+    outline: none;
+}
+
+.footer-socials {
+    padding-left: 40px !important;
+}
+
+summary {
+    outline: none;
+    color: rgba(0, 0, 0);
+    font-size: 13px !important;
+    margin-top: 8px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    line-height: 2 !important;
+    opacity: .8 !important;
+    user-select: none;
+}
+
+.head {
+    position: relative;
+    bottom: 30px;
+    /* text-align: justify !important; */
+}
+
+.footer-description2 {
+    color: #4873c5;
+}
+
+.footer-menu li a:hover {
+    color: #ff9800 !important
+}

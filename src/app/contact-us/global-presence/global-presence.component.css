@@ -1,0 +1,48 @@
+.card-header-padding {
+    padding: 5px 15px !important;
+    background: linear-gradient(90deg, #474747 0%, rgb(106, 106, 109) 100%);
+    background: linear-gradient(90deg, #263248 100%, #1c6c87);
+}
+
+.fas.fa-home.text-md.text-color,
+.fas.fa-mobile-alt.text-md.text-color {
+    font-size: 20px !important;
+}
+
+input[type="checkbox"] {
+    margin-top: 8px;
+}
+
+.card:hover {
+    transform: scale(1.1)
+}
+
+.card {
+    transition: all 0.5s;
+    /* cursor: pointer */
+    height: 250px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+ ::-webkit-scrollbar {
+    width: 0px;
+}
+
+.card p {
+    text-align: justify !important;
+}
+
+@media only screen and (max-width:767px) {
+    .text-white {
+        color: #fff!important;
+        font-size: 18px;
+        margin-bottom: 0px;
+    }
+}
+
+@media only screen and (max-width:575px) {
+    .card {
+        height: auto;
+    }
+}

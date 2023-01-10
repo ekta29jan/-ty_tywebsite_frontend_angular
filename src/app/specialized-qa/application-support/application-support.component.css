@@ -1,0 +1,58 @@
+.laptop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+.card-header {
+    background-color: white !important;
+    padding-left: 0px !important;
+    border-bottom: 2px solid black !important;
+    padding-right: 0px !important;
+    cursor: pointer !important;
+}
+
+.accordion>.card {
+    border: none;
+}
+
+@media only screen and (max-width:2560px) {
+    .starting {
+        margin-top: 80px !important;
+    }
+}
+
+@media only screen and (max-width:1440px) {
+    .starting {
+        margin-top: 80px !important;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .starting {
+        margin-top: 80px !important;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .laptop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .starting {
+        margin-top: 0px !important;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .starting {
+        margin-top: 0px !important;
+    }
+}

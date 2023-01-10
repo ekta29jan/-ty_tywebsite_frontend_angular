@@ -1,0 +1,1199 @@
+/* About section */
+
+#managed {
+    -webkit-animation: mover 1s infinite alternate;
+    animation: mover 1s infinite alternate;
+}
+
+#managed {
+    -webkit-animation: mover 1s infinite alternate;
+    animation: mover 1s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+#professional {
+    -webkit-animation: mover 1s infinite alternate;
+    animation: mover 1s infinite alternate;
+}
+
+#professional {
+    -webkit-animation: mover 1s infinite alternate;
+    animation: mover 1s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+.home-info-grey {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f1f1f2
+}
+
+.home-info-grey h2 {
+    color: var(--black);
+    font-weight: 700;
+    font-size: 16px;
+    font-style: italic
+}
+
+.home-info-grey p {
+    color: #626163;
+    font-weight: 500;
+    font-size: 16px
+}
+
+.drop-cap {
+    margin-right: 25px;
+    float: left;
+    text-align: center;
+    line-height: 1;
+    font-size: 50px
+}
+
+.drop-cap-letter {
+    color: #ff8700;
+    font-size: 90px;
+    font-weight: 700
+}
+
+.drop-cap-text {
+    color: #231833;
+    font-size: 34px;
+    font-weight: 500
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+body {
+    display: grid;
+    place-items: center;
+    background: #eee;
+    font-family: 'Manrope', sans-serif
+}
+
+
+/* .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding: 10px;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: 0px;
+    height: 200px; */
+
+
+/* -moz-box-shadow: 0px 0px 5px 0px rgba(212, 182, 212, 1) */
+
+
+/* } */
+
+.pro-button {
+    padding: 12px 42px;
+    background-color: #ffa000;
+    border-color: #ffa000
+}
+
+.pro-button:focus {
+    outline: none !important;
+    background-color: #ffa000;
+    border-color: #ffa000;
+    box-shadow: 0 0 0 0.2rem rgb(255, 255, 255) !important
+}
+
+.pro-button:active {
+    outline: none !important;
+    background-color: #ffa000 !important;
+    border-color: #ffa000 !important
+}
+
+.pro-button:hover {
+    padding: 12px 42px;
+    background-color: #f1a018;
+    border-color: #f1a018
+}
+
+.title {
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.timeline {
+    position: relative;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.timeline .timeline-container {
+    position: relative;
+    width: 100%;
+}
+
+.timeline .timeline-end,
+.timeline .timeline-start,
+.timeline .timeline-year {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+.timeline .timeline-end p,
+.timeline .timeline-start p,
+.timeline .timeline-year p {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin: 0;
+    padding: 30px 0;
+    text-align: center;
+    background: linear-gradient(orange, orange);
+    border-radius: 100px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.timeline .timeline-year {
+    margin: 30px 0;
+}
+
+.timeline .timeline-continue {
+    position: relative;
+    width: 100%;
+    padding: 60px 0;
+}
+
+.timeline .timeline-continue::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    background: #4f84c4;
+}
+
+.timeline .row.timeline-left,
+.timeline .row.timeline-right .timeline-date {
+    text-align: right;
+}
+
+.timeline .row.timeline-right,
+.timeline .row.timeline-left .timeline-date {
+    text-align: left;
+}
+
+.timeline .timeline-date {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 41px 0 0 0;
+}
+
+.timeline .timeline-date::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 45px;
+    background: linear-gradient(orange, orange);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.timeline .row.timeline-left .timeline-date::after {
+    left: -7px;
+}
+
+.timeline .row.timeline-right .timeline-date::after {
+    right: -7px;
+}
+
+.timeline .timeline-box,
+.timeline .timeline-launch {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    background: #ffffff;
+}
+
+.timeline .timeline-launch {
+    width: 100%;
+    margin: 15px 0;
+    padding: 0;
+    border: none;
+    text-align: center;
+    background: transparent;
+}
+
+.timeline .timeline-box::after,
+.timeline .timeline-box::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.timeline .row.timeline-left .timeline-box::after,
+.timeline .row.timeline-left .timeline-box::before {
+    left: 100%;
+}
+
+.timeline .row.timeline-right .timeline-box::after,
+.timeline .row.timeline-right .timeline-box::before {
+    right: 100%;
+}
+
+.timeline .timeline-launch .timeline-box::after,
+.timeline .timeline-launch .timeline-box::before {
+    left: 50%;
+    margin-left: -10px;
+}
+
+.timeline .timeline-box::after {
+    top: 26px;
+    border-color: transparent transparent transparent #ffffff;
+    border-width: 10px;
+}
+
+.timeline .timeline-box::before {
+    top: 25px;
+    border-color: transparent transparent transparent #dddddd;
+    border-width: 11px;
+}
+
+.timeline .row.timeline-right .timeline-box::after {
+    border-color: transparent #ffffff transparent transparent;
+}
+
+.timeline .row.timeline-right .timeline-box::before {
+    border-color: transparent #dddddd transparent transparent;
+}
+
+.timeline .timeline-launch .timeline-box::after {
+    top: -20px;
+    border-color: transparent transparent #dddddd transparent;
+}
+
+.timeline .timeline-launch .timeline-box::before {
+    top: -19px;
+    border-color: transparent transparent #ffffff transparent;
+    border-width: 10px;
+    z-index: 1;
+}
+
+.timeline .timeline-box .timeline-icon {
+    position: relative;
+    width: 40px;
+    height: auto;
+    float: left;
+}
+
+.timeline .timeline-icon i {
+    font-size: 25px;
+    color: #4f84c4;
+}
+
+.timeline .timeline-box .timeline-text {
+    position: relative;
+    width: calc(100% - 40px);
+    float: left;
+}
+
+.timeline .timeline-launch .timeline-text {
+    width: 100%;
+}
+
+.timeline .timeline-text h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.timeline .timeline-text p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .timeline .timeline-continue::after {
+        left: 40px;
+    }
+    .timeline .timeline-end,
+    .timeline .timeline-start,
+    .timeline .timeline-year,
+    .timeline .row.timeline-left,
+    .timeline .row.timeline-right .timeline-date,
+    .timeline .row.timeline-right,
+    .timeline .row.timeline-left .timeline-date,
+    .timeline .timeline-launch {
+        text-align: left;
+    }
+    .timeline .row.timeline-left .timeline-date::after,
+    .timeline .row.timeline-right .timeline-date::after {
+        left: 47px;
+    }
+    .timeline .timeline-box,
+    .timeline .row.timeline-right .timeline-date,
+    .timeline .row.timeline-left .timeline-date {
+        margin-left: 55px;
+    }
+    .timeline .timeline-launch .timeline-box {
+        margin-left: 0;
+    }
+    .timeline .row.timeline-left .timeline-box::after {
+        left: -20px;
+        border-color: transparent #ffffff transparent transparent;
+    }
+    .timeline .row.timeline-left .timeline-box::before {
+        left: -22px;
+        border-color: transparent #dddddd transparent transparent;
+    }
+    .timeline .timeline-launch .timeline-box::after,
+    .timeline .timeline-launch .timeline-box::before {
+        left: 30px;
+        margin-left: 0;
+    }
+}
+
+
+/* folded card */
+
+.card-front__heading {
+    font-size: 1.5rem;
+    margin-top: .25rem;
+}
+
+
+/* Main heading for inside page */
+
+.inside-page__heading {
+    padding-bottom: 1rem;
+    width: 100%;
+}
+
+
+/* Mixed */
+
+
+/* For both inside page's main heading and 'view me' text on card front cover */
+
+.inside-page__heading,
+.card-front__text-view {
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-top: .2rem;
+}
+
+.inside-page__heading--city,
+.card-front__text-view--city {
+    color: #ff62b2;
+}
+
+.inside-page__heading--ski,
+.card-front__text-view--ski {
+    color: #2aaac1;
+}
+
+.inside-page__heading--beach,
+.card-front__text-view--beach {
+    color: #fa7f67;
+}
+
+.inside-page__heading--camping,
+.card-front__text-view--camping {
+    color: #00b97c;
+}
+
+
+/* Front cover */
+
+.card-front__tp {
+    color: #fafbfa;
+}
+
+
+/* For pricing text on card front cover */
+
+.card-front__text-price {
+    font-size: 1.2rem;
+    margin-top: -.2rem;
+}
+
+
+/* Back cover */
+
+
+/* For inside page's body text */
+
+.inside-page__text {
+    color: #333;
+}
+
+
+/* Icons ===========================================*/
+
+.card-front__icon {
+    fill: #fafbfa;
+    font-size: 3vw;
+    height: 3.25rem;
+    margin-top: -.5rem;
+    width: 3.25rem;
+}
+
+
+/* Buttons =================================================*/
+
+.inside-page__btn {
+    background-color: transparent;
+    border: 3px solid;
+    border-radius: .5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    overflow: hidden;
+    padding: .7rem .75rem;
+    position: relative;
+    text-decoration: none;
+    transition: all .3s ease;
+    width: 90%;
+    z-index: 10;
+}
+
+.inside-page__btn::before {
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: scaleY(0);
+    transition: all .3s ease;
+    width: 100%;
+    z-index: -1;
+}
+
+.inside-page__btn--city {
+    border-color: #ff40a1;
+    color: #ff40a1;
+}
+
+.inside-page__btn--city::before {
+    background-color: #ff40a1;
+}
+
+.inside-page__btn--ski {
+    border-color: #279eb2;
+    color: #279eb2;
+}
+
+.inside-page__btn--ski::before {
+    background-color: #279eb2;
+}
+
+.inside-page__btn--beach {
+    border-color: #fa7f67;
+    color: #fa7f67;
+}
+
+.inside-page__btn--beach::before {
+    background-color: #fa7f67;
+}
+
+.inside-page__btn--camping {
+    border-color: #00b97d;
+    color: #00b97d;
+}
+
+.inside-page__btn--camping::before {
+    background-color: #00b97d;
+}
+
+.inside-page__btn:hover {
+    color: #fafbfa;
+}
+
+.inside-page__btn:hover::before {
+    transform: scaleY(1);
+}
+
+
+/* Layout Structure=========================================*/
+
+.main {
+    background: linear-gradient(to bottom right, #eee8dd, #e3d9c6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+
+/* Container to hold all cards in one place */
+
+.card-area {
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100%;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+
+/* Card ============================================*/
+
+
+/* Area to hold an individual card */
+
+.card-section {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+
+
+/* A container to hold the flip card and the inside page */
+
+
+/* .card {
+    background-color: rgba(0, 0, 0, .05);
+    box-shadow: -.1rem 1.7rem 6.6rem -3.2rem rgba(0, 0, 0, 0.5);
+    height: 15rem;
+    position: relative;
+    transition: all 1s ease;
+    width: 15rem;
+} */
+
+
+/* Flip card - covering both the front and inside front page */
+
+
+/* An outer container to hold the flip card. This excludes the inside page */
+
+.flip-card {
+    height: 15rem;
+    perspective: 100rem;
+    position: absolute;
+    right: 0;
+    transition: all 1s ease;
+    visibility: hidden;
+    width: 15rem;
+    z-index: 100;
+}
+
+
+/* The outer container's visibility is set to hidden. This is to make everything within the container NOT set to hidden  */
+
+
+/* This is done so content in the inside page can be selected */
+
+.flip-card>* {
+    visibility: visible;
+}
+
+
+/* An inner container to hold the flip card. This excludes the inside page */
+
+.flip-card__container {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+    width: 100%;
+}
+
+.card-front,
+.card-back {
+    backface-visibility: hidden;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+
+/* Styling for the front side of the flip card */
+
+
+/* container for the front side */
+
+.card-front {
+    background-color: #fafbfa;
+    height: 15rem;
+    width: 15rem;
+}
+
+
+/* Front side's top section */
+
+.card-front__tp {
+    align-items: center;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 57% 90%, 50% 100%, 43% 90%, 0 90%);
+    display: flex;
+    flex-direction: column;
+    height: 12rem;
+    justify-content: center;
+    padding: .75rem;
+}
+
+.card-front__tp--city {
+    background: linear-gradient(to bottom, #ff73b9, #ff40a1);
+}
+
+.card-front__tp--ski {
+    background: linear-gradient(to bottom, #47c2d7, #279eb2);
+}
+
+.card-front__tp--beach {
+    background: linear-gradient(to bottom, #fb9b88, #f86647);
+}
+
+.card-front__tp--camping {
+    background: linear-gradient(to bottom, #00db93, #00b97d);
+}
+
+
+/* Front card's bottom section */
+
+.card-front__bt {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Styling for the back side of the flip card */
+
+.card-back {
+    background-color: #fafbfa;
+    transform: rotateY(180deg);
+}
+
+
+/* Specifically targeting the <video> element */
+
+.video__container {
+    clip-path: polygon(0% 0%, 100% 0%, 90% 50%, 100% 100%, 0% 100%);
+    height: auto;
+    min-height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+
+/* Inside page */
+
+.inside-page {
+    background-color: #fafbfa;
+    box-shadow: inset 20rem 0px 5rem -2.5rem rgba(0, 0, 0, 0.25);
+    height: 100%;
+    padding: 1rem;
+    position: absolute;
+    right: 0;
+    transition: all 1s ease;
+    width: 15rem;
+    z-index: 1;
+}
+
+.inside-page__container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+
+
+/* Functionality ====================================*/
+
+
+/* This is to keep the card centered (within its container) when opened */
+
+
+/* .card:hover {
+    box-shadow: -.1rem 1.7rem 6.6rem -3.2rem rgba(0, 0, 0, 0.75);
+    width: 30rem;
+} */
+
+
+/* When the card is hovered, the flip card container will rotate */
+
+.card:hover .flip-card__container {
+    transform: rotateY(-180deg);
+}
+
+
+/* When the card is hovered, the shadow on the inside page will shrink to the left */
+
+.card:hover .inside-page {
+    box-shadow: inset 1rem 0px 5rem -2.5rem rgba(0, 0, 0, 0.1);
+}
+
+
+/* tt */
+
+.row-1 p {
+    font-size: calc(12px + (14 - 12) * ((100vw - 360px) / (1600 - 360))) !important;
+    text-align: center;
+    color: #2CB8FE
+}
+
+h5 {
+    font-size: calc(16px + (22 - 16) * ((100vw - 360px) / (1600 - 360))) !important
+}
+
+li {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    cursor: pointer
+}
+
+.carousel-indicators li {
+    cursor: pointer;
+    border-radius: 50% !important;
+    width: 10px;
+    height: 10px;
+    opacity: 0.5;
+    margin: -30px 15px 0px 15px !important;
+    color: #333;
+    background-color: #333 !important;
+    top: 50px !important;
+    position: relative
+}
+
+.carousel-indicators li.active {
+    color: black !important;
+    background-color: black !important;
+    opacity: 0.9;
+}
+
+.carousel-inner {
+    border-radius: 15px !important
+}
+
+
+/* .card {
+    color: #383431 !important;
+    background-color: #FFFFFF !important
+} */
+
+.bonify {
+    font-weight: 600;
+    letter-spacing: 2px !important;
+    cursor: pointer
+}
+
+.bottom-row {
+    color: #aaaaaa
+}
+
+i {
+    font-size: 25px !important;
+    margin-left: calc(15px + (24 - 20) * ((100vw - 360px) / (1600 - 360))) !important;
+    cursor: pointer
+}
+
+.our-services {
+    /* margin-top: 70px; */
+    /* padding-bottom: 30px; */
+    overflow-y: auto;
+    padding: 30px 50px;
+    height: 380px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: all .4s ease-in-out;
+    box-shadow: 0 0 25px 0 rgba(20, 27, 202, .17)
+}
+
+.our-services .icon {
+    margin-bottom: -21px;
+    transform: translateY(-50%);
+    text-align: center
+}
+
+.our-services:hover h4,
+.our-services:hover p {
+    color: #fff
+}
+
+.settings:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    /* cursor: pointer; */
+    background-image: linear-gradient(-45deg, #34b5bf 0%, #210c59 100%)
+}
+
+.settings:hover .hoverimg {
+    display: block;
+}
+
+.settings:hover .servicesimg {
+    display: none;
+}
+
+.hoverimg {
+    display: none;
+    width: 70px;
+    height: 70px;
+    position: relative;
+}
+
+.servicesimg {
+    display: block;
+    width: 70px;
+    height: 70px;
+    position: relative;
+}
+
+.ssl:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #8d40fb 0%, #5a57fb 100%)
+}
+
+.database:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #27b88d 0%, #22dd73 100%)
+}
+
+.folded-corner:hover .text {
+    visibility: visible;
+    color: black;
+}
+
+.Services-tab {
+    margin-top: 50px;
+}
+
+.folded-corner {
+    padding: 40px 30px;
+    position: relative;
+    font-size: 80%;
+    text-decoration: none;
+    color: black;
+    /* color: #999; */
+    background: transparent;
+    transition: all ease 0.5s;
+    border: 1px solid #ec5626;
+    height: 320px !important;
+    text-align: justify !important;
+}
+
+
+/* .folded-corner:hover {
+    background-color: gray;
+} */
+
+.folded-corner:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-style: solid;
+    border-width: 0 0px 0px 0;
+    border-color: #ddd #000;
+    transition: all ease 0.3s;
+}
+
+
+/* .folded-corner:hover:before {
+    background-color: #d00003;
+    border-width: 0 50px 50px 0;
+    border-color: #eee #000;
+} */
+
+.service_tab_1 {
+    background-color: white;
+}
+
+.service_tab_1:hover .fa-icon-image {
+    color: orange;
+    transform: scale(1.5);
+}
+
+.fa-icon-image {
+    color: orange;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    font-size-adjust: none;
+    font-stretch: normal;
+    text-rendering: auto;
+    transition: all 0.65s linear 0s;
+    text-align: center;
+    transition: all 1s cubic-bezier(0.99, 0.82, 0.11, 1.41);
+}
+
+
+/* advantages of iot */
+
+.card1 {
+    border: none;
+    border-radius: 20px;
+    transition: all 0.5s;
+    cursor: pointer
+}
+
+.card1:hover {
+    transform: scale(1.1)
+}
+
+.card-header {
+    cursor: pointer;
+}
+
+.card-header {
+    background-color: white !important;
+    padding-left: 0px !important;
+    border-bottom: 2px solid black !important;
+    padding-right: 0px !important;
+    cursor: pointer !important;
+}
+
+.accordion>.card {
+    border: none;
+}
+
+.heading {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center
+}
+
+.name {
+    font-size: 15px;
+    font-weight: bold
+}
+
+.square {
+    background-color: #fedcdd;
+    height: 30px;
+    width: 30px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.email {
+    font-size: 14px;
+    margin-left: 25px;
+    font-weight: bold
+}
+
+.dummytext {
+    font-size: 12px;
+    font-weight: normal;
+    color: #848590
+}
+
+.icons9 i {
+    color: #FA222A;
+    margin-left: 25px
+}
+
+.icons9 span {
+    font-size: 13px;
+    font-weight: normal;
+    color: #848590
+}
+
+.square1 {
+    background-color: #cfe3fe;
+    height: 30px;
+    width: 30px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.foldedCornerImg {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.icons1 i {
+    color: #497eea;
+    margin-left: 25px
+}
+
+.icons1 span {
+    font-size: 13px;
+    font-weight: normal;
+    color: #848590
+}
+
+.square2 {
+    background-color: #ffefc5;
+    height: 30px;
+    width: 30px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.icons2 i {
+    color: #ffc227;
+    margin-left: 25px
+}
+
+.icons2 span {
+    font-size: 13px;
+    font-weight: normal;
+    color: #848590
+}
+
+.square5 {
+    background-color: #41cfff;
+    height: 30px;
+    width: 30px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.icons5 i {
+    color: #41cfff;
+    margin-left: 25px
+}
+
+.icons5 span {
+    font-size: 13px;
+    font-weight: normal;
+    color: #848590
+}
+
+.square4 {
+    background-color: #eae6fd;
+    height: 30px;
+    width: 30px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.icons4 i {
+    color: #6a35ff;
+    margin-left: 25px
+}
+
+.icons4 span {
+    font-size: 13px;
+    font-weight: normal;
+    color: #848590
+}
+
+.square3 {
+    background-color: #fedfce;
+    height: 30px;
+    width: 30px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.icons3 i {
+    color: #ff8339;
+    margin-left: 25px
+}
+
+.icons3 span {
+    font-size: 13px;
+    font-weight: normal;
+    color: #848590
+}
+
+.learn-btn:hover {
+    background-color: orange !important;
+    border: none !important;
+}
+
+@media (max-width: 768px) {
+    .folded-corner {
+        /* max-height: 470px !important; */
+        overflow: scroll !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    .folded-corner {
+        max-height: 345px !important;
+        overflow: auto;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+@media only screen and (max-width:767px) {
+    .our-services {
+        padding: 30px 20px;
+        height: auto;
+    }
+    .folded-corner {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,40 @@
+/* .box-card-img {
+    width: 100%;
+    height: 250px;
+    position: relative;
+} */
+
+.box {
+    background-color: #f0f2f4;
+}
+
+.casestudy-btn {
+    color: white;
+    background-color: black;
+}
+
+.casestudy {
+    font-size: 17px;
+}
+
+.casestudy-btn:hover {
+    color: black !important;
+    background-color: orange !important;
+}
+
+.ecommerce {
+    font-size: 20px !important;
+    text-align: center;
+    line-height: 1.45 !important;
+    font-weight: bold !important;
+}
+
+.img-fluid {
+    width: 90%;
+}
+
+@media (max-width: 768px) {
+    .casestudy {
+        font-size: 20px;
+    }
+}

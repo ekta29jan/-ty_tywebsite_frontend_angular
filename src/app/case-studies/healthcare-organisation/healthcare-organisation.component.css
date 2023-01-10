@@ -1,0 +1,64 @@
+.detail-icon {
+  font-size: 70px;
+  color: orange;
+}
+
+.details {
+  border-right: 1px solid grey;
+  text-align: center;
+}
+
+.details1 {
+  text-align: center;
+}
+
+.card {
+  text-align: justify;
+  /* height: 110vh; */
+  padding: 20px;
+  border-radius: 20px;
+  /* overflow-y: scroll; */
+
+}
+::-webkit-scrollbar{
+  display: none !important;
+}
+.card p {
+  font-size: 15px;
+}
+
+.block1 {
+  background-color: rgb(226, 240, 240);
+  margin-bottom: 15px;
+}
+
+.block2 {
+  background-color: rgb(245, 233, 245);
+  margin-bottom: 15px;
+}
+
+.block3 {
+  background-color: rgb(230, 241, 230);
+}
+
+.detail-icon1 {
+  font-size: 70px;
+  color: rgb(71, 149, 149);
+  text-align: center;
+}
+
+.detail-icon2 {
+  font-size: 70px;
+  color: rgb(190, 67, 190);
+  text-align: center;
+}
+
+.detail-icon3 {
+  font-size: 70px;
+  color: rgb(74, 192, 74);
+  text-align: center;
+}
+
+.title {
+  color: grey;
+}

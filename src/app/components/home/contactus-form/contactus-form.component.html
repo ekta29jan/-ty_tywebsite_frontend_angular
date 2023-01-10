@@ -1,0 +1,96 @@
+<section>
+    <div class="container-fluid ">
+        <div class="row justify-content-center">
+            <div class="col-lg-9  text-center">
+                <div class="section-title mb-0">
+                    <!-- <div class="mydivider mb-3"></div> -->
+                    <h2 class="heading mb-0" style=" letter-spacing: 0; font-size: 40px;">WANT TO <span style="color: orange;">START</span> A PROJECT?</h2>
+                </div>
+            </div>
+        </div>
+        <h2 class="text-center mb-2 mt-2">
+            It's <span style="color: orange;">Simple !</span>
+        </h2>
+    </div>
+
+
+    <div class="container pt-0 mt-0">
+        <div class="form">
+            <div class="contact-info">
+                <h3 class="title">Let's get in touch !</h3>
+                <p class="text"> Contact us with the following details and fill in the form with the details. </p>
+                <div class="info">
+                    <div class="social-information"><i class="fa fa-map-marker"></i>
+                        <p class="mb-0">TechnoElevate, IndiQube South Mile, 4th Floor, Vijayarangam Layout, Jayanagar, Bengaluru, Karnataka 560070</p>
+                    </div>
+                    <div class="social-information"> <i class="fa fa-envelope-o"></i>
+                        <span style="margin-left: 13px ;">contactus@technoelevate.com</span>
+                    </div>
+                    <div class="social-information"> <i class="fa fa-phone"></i>
+                        <span style="margin-left: 11px ;">+91 9632940869</span>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <p>Connect with us :</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/technoelevate/" target='_blank'> <i class="fa fa-facebook-f"></i> </a>
+                        <a href="https://twitter.com/technoelevate?t=v2SNxdrYA2wWom6ifSjDLA&s=09" target='_blank'> <i class="fa fa-twitter"></i> </a>
+                        <a href="https://instagram.com/technoelevate?utm_medium=copy_link" target='_blank'> <i class="fa fa-instagram"></i> </a>
+                        <a href="https://www.linkedin.com/company/technoelevate" target='_blank'> <i class="fa fa-linkedin"></i> </a>
+                        <a href="https://youtube.com/channel/UCOkwLM30pouI5MUyWIOO5zg" target='_blank'> <i class="fa fa-youtube"></i> </a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-info-form ml-3 border"> <span class="circle one"></span> <span class="circle two"></span>
+
+                <form [formGroup]="contactForm" *ngIf="!toster">
+                    <h3 class="title">Contact us</h3>
+                    <div class="social-input-containers">
+                        <input type="text" [ngClass]="{'invalidBorder':(isSubmit || contactForm.controls.name.touched) && contactForm.controls.name.errors}" formControlName="name" class="input" placeholder="Name" />
+                        <div class="text-danger" *ngIf="(isSubmit || contactForm.controls.name.touched) && contactForm.controls.name.errors?.required"><strong>Name is Mandatory</strong></div>
+                        <div class="text-danger" *ngIf="(isSubmit || contactForm.controls.name.touched) && contactForm.controls.name.errors?.pattern"><strong>Provide Valid Name(numerics are not allowed)</strong></div>
+                        <div class="text-danger" *ngIf="(isSubmit || contactForm.controls.name.touched) && contactForm.controls.name.errors?.maxlength"><strong>Only 50 characters allowed.</strong></div>
+                    </div>
+                    <div class="social-input-containers">
+                        <input type="email" [ngClass]="{'invalidBorder':(isSubmit || contactForm.controls.email.touched) && contactForm.controls.email.invalid}" name="email" formControlName="email" class="input" placeholder="Email" />
+                        <div class="text-danger" *ngIf="(isSubmit || contactForm.controls.email.touched) && contactForm.controls.email.errors?.required"><strong>Email is Mandatory</strong></div>
+                        <div class="text-danger" *ngIf="(isSubmit || contactForm.controls.email.touched) && contactForm.controls.email.errors?.pattern"><strong>Provide Valid Email</strong></div>
+                    </div>
+                    <div class="social-input-containers">
+                        <input type="tel" maxlength="10" [ngClass]="{'invalidBorder':(isSubmit || contactForm.controls.phone.touched) && contactForm.controls.phone.errors}" name="phone" formControlName="phone" class="input" placeholder="Phone" />
+                        <div class="text-danger" *ngIf="(isSubmit || contactForm.controls.phone.touched) && contactForm.controls.phone.errors?.required"><strong>Phone Number is Mandatory</strong></div>
+                        <div class="text-danger" *ngIf="(isSubmit || contactForm.controls.phone.touched) && contactForm.controls.phone.errors?.pattern"><strong>Provide Valid Phone Number(alphabets are not allowed and phone number should be of 10 digits)</strong></div>
+                    </div>
+                    <div class="social-input-containers textarea">
+                        <textarea name="message" [ngClass]="{'invalidBorder':(isSubmit || contactForm.controls.description.touched) && contactForm.controls.description.errors}" class="input" formControlName="description" placeholder="Project Description!">
+                      </textarea>
+                        <div class="text-danger" *ngIf="(isSubmit || contactForm.controls.description.touched) && contactForm.controls.description.errors?.required"><strong>Project Description is Mandatory</strong></div>
+                        <div class="text-danger" *ngIf="(isSubmit || contactForm.controls.description.touched) && contactForm.controls.description.errors?.maxlength"><strong>Only 200 characters allowed.</strong></div>
+                    </div>
+                    <div>
+                        <div class="grecaptcha">
+                            <re-captcha data-size="compact" size="5" (resolved)="resolved($event)" class="g-recaptcha" data-size="g-recaptcha" style="width:500px" width="500px" errorMode="handled" formControlName="recaptcha" [siteKey]='key'>
+
+                            </re-captcha>
+                        </div>
+
+                    </div>
+                    <!-- <input type="submit" [disabled]="contactForm.invalid" (click)="onSubmit()" value="Send" class="btn" /> -->
+                    <button type="submit" class="btn btn-light my-3" [disabled]="contactForm.invalid" (click)="onSubmit()" value="Send">Send</button>
+                </form>
+
+                <div class="mt-5" *ngIf="toster" style="height: 100px;">
+                    <div class="card  m-auto" style="width: 80% ; ">
+                        <div class="card-body" style=" text-align: center; font-size: large;">
+                            {{errormessage}}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center  d-flex justify-content-center align-items-center" *ngIf="showLoadingIndicator">
+                    <img src="../assets/images/Spinner-1s-230px.svg" class="spinner" alt="Spinner" style="z-index: 1000 !important; border-radius: 50% !important;">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

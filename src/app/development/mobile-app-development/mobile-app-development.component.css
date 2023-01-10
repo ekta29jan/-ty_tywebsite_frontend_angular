@@ -1,0 +1,23 @@
+.mydivider1 {
+    margin: 22px auto !important;
+    background-image: linear-gradient(to right, transparent, #ff9800, transparent) !important;
+    width: 90% !important;
+    height: 1px !important;
+}
+
+.laptop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+@media only screen and (max-width:991px) {
+    .laptop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+}

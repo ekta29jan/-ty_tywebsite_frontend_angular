@@ -1,0 +1,99 @@
+<div class="container-fluid">
+    <div class="row">
+        <img [src]="currentDetails?.image_url" class="position-relative w-100" alt="" />
+    </div>
+</div>
+<div class="container ">
+    <div class="row d-flex justify-content-between border-bottom my-2 ">
+        <div class="py-4 home3">
+            <a routerLink="/home" class="careersBreadcrums">Home </a>/ <a routerLink="/careers" class="careersBreadcrums">Careers </a>/
+            <span class="careersBreadcrums">{{ currentDetails?.role }}</span>
+        </div>
+        <div class="applybtn ">
+            <button class="btn btn-dark btn-sm px-3 apply-button " routerLink="/application-form">Apply</button>
+        </div>
+        <!-- <router-outlet></router-outlet> -->
+    </div>
+    <div class="row   my-2">
+        <div class="col-md-3">
+            <h3 class="mt-2">Description</h3>
+        </div>
+        <div class="col-md-9">
+            {{ currentDetails?.description }}
+        </div>
+    </div>
+    <div class="row  border-bottom my-2">
+        <div class="col-md-12 py-2">
+            <i class="fa fa-map-marker fa-2xl maker-icon" aria-hidden="true"></i> &nbsp;<b style="color: #007BFF;">{{ currentDetails?.location }}</b>
+        </div>
+    </div>
+    <div class="row  border-bottom my-2">
+        <div class="col-md-3 ">
+            <h3 class="mt-2 mt-md-0 mb-md-0">Qualification</h3>
+        </div>
+        <div class="col-md-9 ">
+            <p class="mb-0 mb-md-1">{{ currentDetails?.qualification }}</p>
+        </div>
+    </div>
+    <div class="row  border-bottom my-2">
+        <div class="col-md-3 ">
+            <h3>Requirements</h3>
+        </div>
+        <div class="col-md-9 ">
+            <ul class="pl-0 list2">
+                <li *ngFor="let requirement of currentDetails?.requirements">
+                    {{ requirement }}
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row  border-bottom my-2" *ngIf="currentDetails?.nice_to_have.length > 0">
+        <div class="col-md-3 ">
+            <h3>Nice to have</h3>
+        </div>
+        <div class="col-md-9 ">
+            <ul class="pl-0 list2">
+                <li *ngFor="let nice of currentDetails?.nice_to_have">
+                    {{ nice }}
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row  border-bottom my-2" *ngIf="currentDetails?.job_descriptions">
+        <div class="col-md-3 ">
+            <h3>Job Description</h3>
+        </div>
+        <div class="col-md-9 ">
+            <ul class="pl-0 list2">
+                <li *ngFor="let job_description of currentDetails?.job_descriptions">
+                    {{ job_description }}
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="row  border-bottom my-2" *ngIf="currentDetails?.terms">
+      <div class="col-md-3 ">
+          <h3>Terms</h3>
+      </div>
+      <div class="col-md-9 ">
+          <ul class="pl-0 list2">
+              <li *ngFor="let job_terms of currentDetails?.terms">
+                  {{ job_terms }}
+              </li>
+          </ul>
+      </div>
+  </div>
+
+
+    <div class="row  border-bottom mt-2 mb-4">
+        <div class="col-md-3  my-auto">
+            <h3>Any Questions?</h3>
+        </div>
+        <div class="col-md-9  my-auto">
+            <a href="mailto:contactus@technoelevate.com">contactus@technoelevate.com</a>
+            <!-- <b class="mb-3 d-block">contactus@ <span style="color: #007BFF;">technoelevate.com</span></b> -->
+        </div>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+.casestudy-btn {
+    color: white;
+    background-color: black;
+}
+
+.casestudy-btn:hover {
+    color: black !important;
+    background-color: orange !important;
+}
+
+.img-fluid {
+    width: 90%;
+}
+
+.casestudy {
+    font-size: 20px !important;
+    text-align: center;
+    font-weight: bold;
+}

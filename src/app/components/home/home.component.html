@@ -1,0 +1,841 @@
+<div class="main-wrapper">
+    <!-- Carousel start -->
+    <section class="desktop">
+        <div id="banner" class="carousel slide " data-ride="carousel" data-pause="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="2500">
+                    <div class="slider">
+                    </div>
+                </div>
+                <div class="carousel-item" data-interval="2500">
+                    <div class="slider1">
+                    </div>
+                </div>
+                <div class="carousel-item" data-interval="2500">
+                    <div class="slider2">
+                    </div>
+                </div>
+                <div class="carousel-item" data-interval="2500">
+                    <div class="slider3">
+                    </div>
+                </div>
+                <div class="carousel-item" data-interval="2500">
+                    <div class="slider4">
+                    </div>
+                </div>
+                <div class="carousel-item" data-interval="2500">
+                    <div class="slider5">
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#banner" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#banner" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <section class="sections mobile">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+
+                    <img src=" ../../../assets/images/home/Web-1920-–-1-_1_.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../../../assets/images/home/Web-1920-–-2-_2_.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../../../assets/images/home/Web-1920-–-3-_1_.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../../../assets/images/home/Web-1920-–-4-_1_.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../../../assets/images/home/Web-1920-–-5-_1_.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../../../assets/images/home/Web-1920-–-6-_1_.webp" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <!-- Carousel  End  -->
+    <!-- Statistics -->
+    <!-- <section class="container-fluid mt-3">
+        <ngx-slick-carousel class="carousel" #statisticsSlick="slick-carousel" [config]="slick.statisticsConfig">
+            <div ngxSlickItem class="slide">
+                <div class="stat-cover">
+                    <div class="card p-3 slides">
+                        <i [class]="stats.class"></i>
+                        <h3 class="mt-3 text-center icon-heading">{{ stats.content }}</h3>
+                    </div>
+                </div>
+            </div>
+        </ngx-slick-carousel>
+    </section> -->
+
+    <section class="container-fluid py-2 ">
+        <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-2" *ngFor="let stats of slick.statistics">
+                <div class="card p-3 slides">
+                    <i [class]="stats.class"></i>
+                    <h3 class="mt-3 text-center">{{ stats.count }}</h3>
+                    <h3 class="text-center icon-heading">{{ stats.content }}</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Statistics -->
+
+    <!-- Section About start -->
+    <section class="section pb-3 mt-1 bg-gray">
+        <div class="mycontainer mt-3">
+            <div class="row ">
+                <div class="col-lg-6 ">
+                    <iframe width="400" height="315" style="border: 3px; width:100% " src="https://www.youtube.com/embed/h_gVtDuPlgs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-lg-6">
+                    <div>
+                        <h2 class="heading text-center" style="  font-size: 37px;">WANT TO <span class="text-color">ENHANCE</span> YOUR <span class="text-color"> BUSINESS</span>? <br> WE CAN BE OF HELP! </h2>
+                        <p class="mb-4 description text-center">
+                            With over 3 years of experience and 800+ developers on board, TechnoElevate serves medium-sized and large companies all over the world. Because we have comprehensive technical knowledge combined with business understanding, we are able to create unique
+                            solutions that power businesses, their employees, and customers every day.
+                        </p>
+                        <p class="mb-4 description text-center">
+                            We follow the most recent industry trends and quality standards to deliver powerful and secure software that is well-suited to corporate environments and provides a positive user experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section About End -->
+
+    <!-- Section Services Start -->
+    <section class="section">
+        <div class="container-fluid">
+            <div class="row justify-content-center mx-3">
+                <div class="col-lg-12 text-center">
+                    <div class="section-title">
+                        <div class="mydivider mb-3"></div>
+                        <h2 class="heading" style=" letter-spacing: 0; font-size: 40px;">THE MOST EFFECTIVE CUSTOM <span class="text-color"> SOFTWARE DEVELOPMENT COMPANY </span> <br> FOR WEB & MOBILE APPS
+                        </h2>
+                        <p>A full range of services covering all aspects of software engineering.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row  mx-4">
+                <div class="col-lg-4 col-md-6 col-sm-12 caseStudies" *ngFor="let service of slick.services">
+                    <div class="text-center  px-3 py-5 hover-style-1 mx-1 " (click)="caseStudies(service.serviceName)">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img [src]="service.Image" alt="" class="serviceImage" style="position: relative; width: 15%;">
+                            <img [src]="service.Image1" alt="" class="serviceImage1" style="position: relative; width: 15%;">
+                        </div>
+                        <!-- <i [class]="service.class"></i> -->
+                        <h4 class="service-heading">{{service.serviceName}}</h4>
+                        <p class="description text-center">
+                            {{service.content}}
+                        </p>
+                        <!-- <div class="icon1"> -->
+                        <i [class]="service.class1" class="text-color float-right"></i>
+                        <i [class]="service.class2" class="text-color float-right"> </i>
+                        <i [class]="service.class3" class="text-color float-right"></i>
+                        <!-- </div> -->
+                        <!-- routerLink="/solutions/crowd-beta-testers" -->
+                    </div>
+                </div>
+                <!-- <div class="card col-lg-4 col-md-6 col-sm-12" style="width: 18rem;" *ngFor="let service of slick.services">
+                  <div class="card-body">
+                      <h4 class="card-title">{{service.serviceName}}</h4>
+                      <p class="card-text">{{service.content}}</p>
+                      <div class="icon1">
+                          <i [class]="service.class1" routerLink="/specialized-qa/automation"></i>
+                          <i [class]="service.class2" routerLink="/specialized-qa/performance"> </i>
+                          <i [class]="service.class3" routerLink="/specialized-qa/security"></i>
+                      </div>
+                  </div>
+              </div> -->
+            </div>
+        </div>
+    </section>
+
+    <div class="section bg-gray">
+        <div class="mycontainer">
+            <!-- <div class="section-title">
+            <h2 class="" style=" letter-spacing: 0; font-size: 40px; text-align: center;"> HOW WE <span
+                style="color: #ff9800;"> DO IT? </span> </h2>
+            <div class="mydivider1 mb-3"></div>
+          </div> -->
+        </div>
+        <section>
+            <div class="mycontainer">
+                <img src="../../../assets/images/StrongerMe.png" style="position: relative;">
+            </div>
+        </section>
+    </div>
+    <!-- Section Services End -->
+    <!-- Our Directors Words -->
+    <!-- <section class="section bg-gray">
+  <div class="mycontainer">
+    <div class="row justify-content-center mx-3">
+      <div class="col-lg-8 text-center">
+        <div class="section-title">
+          <div class="mydivider mb-3"></div>
+          <h2 class="heading">What We Do</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 mt-3">
+        <div class="card">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/uYeMScxrZBA" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="card-body">
+            <h4>
+              Our Capabilities in Testing
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mt-3">
+        <div class="card">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/vWLcyFtni6U" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="card-body">
+            <h4>
+              The World's Largest Training Service
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mt-3">
+        <div class="card">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/n_Cn8eFo7u8" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="card-body">
+            <h4>
+              Tech Elevate - Development Services
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mt-3">
+        <div class="card">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/pl4UYZfVmTA" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="card-body">
+            <h4>
+              Capabilities in Crowd Testing
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mt-3">
+        <div class="card">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/uU0PhxGOHKU" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="card-body">
+            <h4>
+              Experience in Automation
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mt-3">
+        <div class="card">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/1i9kcBHX2Nw" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="card-body">
+            <h4>
+              Experiential Learning Factory(ELF)
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+    <!-- Our Directors Words -->
+
+    <!-- Tagline -->
+    <section class="section course">
+        <div class="mycontainer">
+            <div class="row justify-content-center mx-4">
+                <div class="col-lg-16 text-center">
+                    <div class="section-title">
+                        <div class="mydivider mb-4"></div>
+                        <h2 class="tagline" style=" letter-spacing: 0; "> <span class="text-color">50+</span> COMPLETED PROJECTS IN <span class="text-color">6+</span> COUNTRIES IN LESS THAN <span class="text-color">3</span> YEARS</h2>
+                        <p> We deliver globally, providing result-driven project management and seamless communication.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="row">
+      <div class="col-md-3">
+        <a href="http://qspiders.com/" target="_blank">
+          <img src="assets/images/logos/qsp.jpeg" alt="" style="padding: 10px 10px;"
+            class="img-fluid img-relative brand-logo">
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="http://jspiders.com/" target="_blank">
+          <img src="assets/images/logos/jspiders-logo.jpg" alt="" style="padding: 10px 10px;"
+            class="img-fluid img-relative brand-logo">
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="http://pyspiders.com/" target="_blank">
+          <img src="assets/images/logos/pyspiders-new.jpg" alt="" style="padding: 10px 10px;"
+            class="img-fluid img-relative brand-logo">
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="https://www.skillrary.com/">
+          <img src="assets/images/logos/skillrary-linear-new.png" alt="" style="padding: 10px 10px; "
+            class="img-fluid img-relative brand-logo">
+        </a>
+      </div>
+    </div> -->
+            <!-- <div class="col-md-4">
+        <a href="/404">
+          <img src="assets/images/logos/ELF.png" alt="" style="padding: 10px 5px;"
+            class="img-fluid img-relative brand-logo">
+        </a>
+      </div> -->
+            <!-- <div class="col-md-4">
+        <a routerLink="/solutions/test-optimize">
+          <h2 class="text-logo">
+            TES<span class="text-color">TO</span>PTIMIZE
+          </h2>
+        </a>
+      </div> -->
+            <!-- <div class="col-md-4">
+        <a href="https://www.skillrary.com/" target="_blank">
+          <img src="assets/images/logos/skillrary-linear-new.png" alt="" style="padding: 10px 20px;"
+            class="img-fluid img-relative brand-logo"></a>
+      </div> -->
+            <!-- <div class="col-md-4">
+        <a href="/solutions/crowd-testing">
+          <img src="assets/images/logos/cbt.png" alt="" style="padding: 0 100px;"
+            class="img-fluid img-relative brand-logo">
+        </a>
+      </div> -->
+            <!-- <div class="col-md-4">
+        <a href="http://aispiders.com/" target="_blank">
+          <img src="assets/images/logos/AISpiders.jpg" alt="" style="padding: 10px 20px;"
+            class="img-fluid img-relative brand-logo">
+        </a>
+      </div> -->
+        </div>
+    </section>
+
+    <!-- Section Case studies Start -->
+    <section class="section  bg-gray">
+        <div class="mycontainer">
+            <!-- <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <div class="section-title">
+          <div class="mydivider mb-3"></div>
+          <h2 class="heading">Case Studies</h2>
+        </div>
+      </div>
+    </div> -->
+            <ngx-slick-carousel class="carousel" #caseStudySlick="slick-carousel" [config]="slick.caseStudyConfig">
+                <div class="col-sm-6 col-md-4 slide" ngxSlickItem>
+                    <div class="card border-0 shadow-sm rounded-0 case-study" routerLink="/case-studies/healthcare">
+                        <img src="assets/images/Case study/Card-healthcare.png" alt="" class="img-fluid box-card-img">
+                        <div class="card-body">
+                            <h3 class="text-center ">HEALTHCARE</h3>
+                            <h3 class="text-center text-secondary">Dental Clinic Management Solution</h3>
+                            <!-- <p> End to End Automation for Retail Conglomerate Lorem ipsum dolor sit </p> -->
+                            <!-- <a routerLink="/case-studies/retail" class="btn btn-main case-btn">
+              View more
+            </a> -->
+
+                            <!-- <div *ngIf="viewMore">End to End Automation for Retail Conglomerate</div> -->
+                        </div>
+                        <div class="text-right casestudy-icon card-footer">
+                            <i class='fas fa-angle-double-right ' style='font-size:20px;'></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 slide" ngxSlickItem>
+                    <div class="card border-0 shadow-sm rounded-0 case-study" routerLink="/case-studies/technology">
+                        <img src="assets/images/Case study/Card-technology.png" alt="" class="img-fluid box-card-img">
+                        <div class="card-body">
+                            <h3 class="text-center">TECHNOLOGY</h3>
+                            <h3 class="text-center text-secondary">VBA IDE Feature for an Office suite </h3>
+                            <!-- <a routerLink="/case-studies/telecom" class="btn btn-main case-btn">
+              View more
+            </a> -->
+                            <!-- <a class="casestudy"> <i class='fas fa-angle-double-down'
+                                    style='font-size:20px'></i></a>
+                            <div>End to End Automation for Retail Conglomerate</div> -->
+                        </div>
+                        <div class="text-right casestudy-icon card-footer">
+                            <i class='fas fa-angle-double-right ' style='font-size:20px'></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 slide" ngxSlickItem>
+                    <div class="card border-0 shadow-sm rounded-0 case-study" routerLink="/case-studies/tech-dvms">
+                        <img src="assets/images/Case study/Card-Technology (vms).png" alt="" class="img-fluid box-card-img">
+                        <div class="card-body">
+                            <h3 class="text-center">TECHNOLOGY</h3>
+                            <h3 class="text-center text-secondary">Digital Visitor Management System </h3>
+                            <!-- <a routerLink="/case-studies/telecom" class="btn btn-main case-btn">
+              View more
+            </a> -->
+                            <!-- <a class="casestudy"> <i class='fas fa-angle-double-down'
+                                    style='font-size:20px'></i></a>
+                            <div>End to End Automation for Retail Conglomerate</div> -->
+                        </div>
+                        <div class="text-right casestudy-icon card-footer">
+                            <i class='fas fa-angle-double-right ' style='font-size:20px'></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 slide" ngxSlickItem>
+                    <div class="card border-0 shadow-sm rounded-0 case-study" routerLink="/case-studies/e-commerce/">
+                        <img src="assets/images/Case study/Card-ecommerce.png" alt="" class="img-fluid box-card-img">
+                        <div class="card-body">
+                            <h3 class="text-center">E-Commerce</h3>
+                            <h3 class="text-center  text-secondary">Multi-vendors ECommerce application</h3>
+                            <!-- <h5>DEVOPS</h5>
+                            <p>Test automation and performance testing for DevOps platform</p> -->
+                            <!-- <a routerLink="/case-studies/devops" class="btn btn-main case-btn">
+              View more
+            </a> -->
+                            <!-- <a class="casestudy-icon"> <i class='fas fa-angle-double-down'
+                                    style='font-size:20px '></i></a> -->
+                            <!-- <div>End to End Automation for Retail Conglomerate</div> -->
+                        </div>
+                        <div class="text-right casestudy-icon card-footer">
+                            <i class='fas fa-angle-double-right ' style='font-size:20px'></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 slide" ngxSlickItem>
+                    <div class="card border-0 shadow-sm rounded-0 case-study" routerLink="/case-studies/education/">
+                        <img src="assets/images/Case study/Card-education.png" alt="" class="img-fluid box-card-img">
+                        <div class="card-body">
+                            <h3 class="text-center">Education</h3>
+                            <h3 class="text-center  text-secondary">SCHOOL EXPERT SYSTEM (SES)</h3>
+                            <!-- <h5>DEVOPS</h5>
+                          <p>Test automation and performance testing for DevOps platform</p> -->
+                            <!-- <a routerLink="/case-studies/devops" class="btn btn-main case-btn">
+            View more
+          </a> -->
+                            <!-- <a class="casestudy-icon"> <i class='fas fa-angle-double-down'
+                                  style='font-size:20px '></i></a> -->
+                            <!-- <div>End to End Automation for Retail Conglomerate</div> -->
+                        </div>
+                        <div class="text-right casestudy-icon card-footer">
+                            <i class='fas fa-angle-double-right ' style='font-size:20px'></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 slide" ngxSlickItem>
+                    <div class="card border-0 shadow-sm rounded-0 case-study" routerLink="/case-studies/banking/">
+                        <img src="assets/images/Case study/Card-banking.png" alt="" class="img-fluid box-card-img">
+                        <div class="card-body">
+                            <h3 class="text-center">BANKING</h3>
+                            <h3 class="text-center  text-secondary">Product development for a payment company</h3>
+                            <!-- <h5>DEVOPS</h5>
+                          <p>Test automation and performance testing for DevOps platform</p> -->
+                            <!-- <a routerLink="/case-studies/devops" class="btn btn-main case-btn">
+            View more
+          </a> -->
+                            <!-- <a class="casestudy-icon"> <i class='fas fa-angle-double-down'
+                                  style='font-size:20px '></i></a> -->
+                            <!-- <div>End to End Automation for Retail Conglomerate</div> -->
+                        </div>
+                        <div class="text-right casestudy-icon card-footer">
+                            <i class='fas fa-angle-double-right ' style='font-size:20px'></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-md-3 slide" ngxSlickItem>
+                    <div class="card border-0 shadow-sm rounded-0 case-study">
+                        <img src="assets/images/Case study/c4.jpg" alt="" class="img-fluid box-card-img">
+                        <div class="card-body"> -->
+                <!-- <h5>SALESFORCE</h5>
+                            <p>Salesforce testing for provider of protection solution &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p> -->
+                <!-- <a routerLink="/case-studies/salesforce" class="btn btn-main case-btn">
+              View more
+            </a> -->
+                <!-- <a class="casestudy-icon"> <i class='fas fa-angle-double-down'
+                                    style='font-size:20px'></i></a> -->
+                <!-- <div>End to End Automation for Retail Conglomerate</div> -->
+                <!-- </div>
+                        <div class="text-right casestudy-icon card-footer">
+                            <a href="../../case-studies/technology/"> <i class='fas fa-angle-double-right ' style='font-size:20px'></i></a>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- 2nd iteration -->
+                <!-- <div class="col-md-3 slide" ngxSlickItem style="text-align: left !important;">
+                    <div class="card border-0 shadow-sm rounded-0">
+                        <img src="assets/images/Case study/Retail_domain.jpg" alt="" class="img-fluid box-card-img">
+                        <div class="card-body">
+                            <h5>RETAIL DOMAIN</h5>
+                            <p>End to End Automation for Retail Conglomerate </p>
+                            <br>
+                            <a routerLink="/case-studies/retail" class="btn btn-main case-btn">
+              View more
+            </a>
+                            <a (click)='onViewMorecard3()' class="casestudy"> <i class='fas fa-angle-double-down'
+                                    style='font-size:20px'></i></a>
+                            <div *ngIf="viewMoreCard3">End to End Automation for Retail Conglomerate</div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="col-md-3 slide" ngxSlickItem style="text-align: left !important;">
+                    <div class="card border-0 shadow-sm rounded-0">
+                        <img src="assets/images/Case study/telecom.jpg" alt="" class="img-fluid box-card-img">
+                        <div class="card-body">
+                            <h5>TELECOM</h5>
+                            <p>Regression test suite automation for telecom service provider</p>
+                            <a routerLink="/case-studies/telecom" class="btn btn-main case-btn">
+              View more
+            </a>
+                            <a (click)='onViewMorecard4()' class="casestudy"> <i class='fas fa-angle-double-down'
+                                    style='font-size:20px'></i></a>
+                            <div *ngIf="viewMoreCard4">End to End Automation for Retail Conglomerate </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="col-md-3 slide" ngxSlickItem style="text-align: left !important;">
+                    <div class="card border-0 shadow-sm rounded-0">
+                        <img src="assets/images/Case study/Mobile app device testing.jpg" alt=""
+                            class="img-fluid box-card-img">
+                        <div class="card-body">
+                            <h5>DEVOPS</h5>
+                            <p>Test automation and performance testing for DevOps platform</p>
+                            <a (click)='onViewMorecard5()' class="casestudy"> <i class='fas fa-angle-double-down'
+                                    style='font-size:20px'></i></a>
+                            <div *ngIf="viewMoreCard5">End to End Automation for Retail Conglomerate</div>
+                            routerLink="/case-studies/devops"
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="col-md-3 slide" ngxSlickItem style="text-align: left !important;">
+                    <div class="card border-0 shadow-sm rounded-0">
+                        <img src="assets/images/Case study/c4.jpg" alt="" class="img-fluid box-card-img">
+                        <div class="card-body">
+                            <h5>SALESFORCE</h5>
+                            <p>Salesforce testing for provider of protection solution &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+                            <a routerLink="/case-studies/salesforce" class="btn btn-main case-btn">
+              View more
+            </a>
+                            <a (click)='onViewMorecard6()' class="casestudy"> <i class='fas fa-angle-double-down'
+                                    style='font-size:20px'></i></a>
+                            <div *ngIf="viewMoreCard6">End to End Automation for Retail Conglomerate</div>
+                        </div>
+                    </div>
+                </div> -->
+            </ngx-slick-carousel>
+        </div>
+    </section>
+    <!-- Section case studies ENd -->
+    <!-- Client Testimonials -->
+    <!-- <section class="section testimonial-background" style="padding: 0 0 20px;">
+      <div class="mycontainer">
+          <div class="row justify-content-center">
+              <div class="col-lg-8 text-center">
+                  <div class="section-title" style="margin-bottom: 10px;">
+                      <div class="mydivider mb-3"></div>
+                      <h2 class="heading text-white">CLIENT TESTIMONIALS</h2>
+                  </div>
+              </div>
+          </div>
+          <ngx-slick-carousel class="carousel carousel-testimonial" #testimonialSlick="slick-carousel" [config]="slick.testimonialConfig">
+              <div ngxSlickItem *ngFor="let testimonial of slick.testimonials" class="slide">
+                  <div class="text-center col-md-8 offset-md-2">
+                      <img src="{{testimonial.imgURL}}" alt="" style="width: 100px; height: 100px; border-radius: 99%; margin: auto; background-color: white; position: relative;">
+                      <p class="text-white">
+                          {{testimonial.content}}
+                      </p>
+                      <h5 class="text-white">{{ testimonial.name }}</h5>
+                      <h5 class="text-white">{{ testimonial.designation }} , {{ testimonial.organisation }}</h5>
+                  </div>
+              </div>
+          </ngx-slick-carousel>
+      </div>
+  </section> -->
+    <!-- client testimonials -->
+    <!-- clients -->
+    <section class="section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-16 text-center">
+                    <div class="section-title mb-0">
+                        <div class="mydivider mb-3"></div>
+                        <h2 class="heading mb-0" style=" letter-spacing: 0;"> <span class="text-color">40+</span> CUSTOMERS FROM <span class="text-color"> SMB</span> <span style="text-transform: lowercase;">s</span> TO <span class="text-color"> FORTUNE
+                                500</span> COMPANIES</h2>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center" style="margin-top: 8px !important;">
+                We handle technology challenges and help companies in their digital transformation.
+            </p>
+            <!-- <ngx-slick-carousel class="carousel" #newClients="slick-carousel" [config]="slick.newBrandsConfig">
+      <img *ngFor="let client of slick.clients" ngxSlickItem class="slide" [src]="client" alt=""
+        style="position: relative; height: 70px; margin: 0 15px;">
+    </ngx-slick-carousel> -->
+            <!-- <ngx-slick-carousel class="carousel" #clientSlick="slick-carousel" [config]="slick.clientSlickConfig"> -->
+            <!-- slide -->
+            <!-- <div ngxSlickItem class="slide"> -->
+            <!-- row1 -->
+            <!-- <div class="parent1"> -->
+            <!-- <div class="row mb-3">
+                            <div class="col-md-2">
+                                <img src="../../../assets/images/clients/agilisium.png" class="img-relative img-fluid" width="100%" alt="">
+                            </div>
+                            <div class="col-md-2">
+                                <img src="../../../assets/images/clients/Allstate.jpg" width="100%" class="img-relative img-fluid" alt="">
+                            </div>
+                            <div class="col-md-2">
+                                <img src="../../../assets/images/clients/almawizz.jpg" width="40%" class="img-relative img-fluid" alt="">
+                            </div>
+                            <div class="col-md-2">
+                                <img src="../../../assets/images/clients/amdocs.png" width="100%" class="img-relative img-fluid" style="padding-top: 10px;" alt="">
+                            </div>
+                            <div class="col-md-2">
+                                <img src="../../../assets/images/clients/aritha2.png" width="50%" class="img-relative img-fluid" alt="">
+                            </div>
+                            <div class="col-md-2">
+                                <img src="../../../assets/images/clients/AreteMindss.png" width="100%" class="img-relative img-fluid" alt="">
+                            </div>
+                        </div> -->
+            <!-- row2 -->
+            <!-- <div class="row mb-3">
+                            <div class="col-md-2">
+                                <img src="../../../assets/images/clients/aspire.png" width="100%" class="img-relative img-fluid" alt="">
+                            </div>
+                            <div class="col-md-2">
+                                <img src="../../../assets/images/clients/atyati.png" width="100%" class="img-relative img-fluid" style="padding-top: 20px;" alt="">
+                            </div>
+                            <div class="col-md-2">
+                                <img src="../../../assets/images/clients/Bosch-Logo.png" class="img-relative img-fluid" width="100%" alt="">
+                            </div>
+                            <div class="col-md-2">
+                                <img src="../../../assets/images/clients/Bristlecone.png" class="img-relative img-fluid" style="padding-top: 30px;" width="100%" alt="">
+                            </div>
+                            <div class="col-md-2">
+                                <img src="../../../assets/images/clients/cignex.png" width="100%" class="img-relative img-fluid" alt="">
+                            </div>
+                            <div class="col-md-2">
+                                <img src="../../../assets/images/clients/clairvoyant.png" style="padding-top: 30px;" class="img-relative img-fluid" width="100%" alt="">
+                            </div>
+                        </div> -->
+            <!-- </div>
+                </div> -->
+            <!-- slide1 -->
+            <!-- <div ngxSlickItem class="slide"> -->
+            <!-- row1 -->
+            <!-- <div class="row mb-3">
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/csm.png" class="img-relative img-fluid" style="padding-top: 35px;" width="60%" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/Digitoonz-logo.png" width="50%" class="img-relative img-fluid" style="padding-top: 55px;" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/dreamorbitt.jpg" width="80%" class="img-relative img-fluid" style="padding-top: 60px;" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/Ebix.png" width="50%" class="img-relative img-fluid" style="padding-top: 45px" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/envestnet.png" width="100%" style="padding-top: 45px" class="img-relative img-fluid" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/experience-commerce.gif" width="100%" style="padding-top: 43px" class="img-relative img-fluid" alt="">
+                        </div>
+                    </div> -->
+            <!-- row2 -->
+            <!-- <div class="row mb-3">
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/exzatech-new-logo.png" width="80%" style="padding-top: 35px" class="img-relative img-fluid" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/hancom.png" width="80%" class="img-relative img-fluid" style="padding-top: 20px;" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/Hitachi_logo.png" class="img-relative img-fluid" style="padding-top: 40px;" width="70%" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/hitachi_mgrm.jpg" class="img-relative img-fluid" style="padding-top: 10px;" width="40%" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/hudini1.png" width="100%" class="img-relative img-fluid" style="padding-top: 25px;" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/idexcel.jpg" style="padding-bottom: 55px;" class="img-relative img-fluid" width="70%" alt="">
+                        </div>
+                    </div> -->
+
+            <!-- </div> -->
+            <!-- slide-2 -->
+            <!-- <div ngxSlickItem class="slide"> -->
+            <!-- row1 -->
+            <!-- <div class="row mb-3">
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/iexceed.png" class="img-relative img-fluid" style="padding-top: 45px;" width="60%" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/infosys.png" width="50%" class="img-relative img-fluid" style="padding-top: 80px;" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/InfrasoftTech-Logo.jpg" width="80%" class="img-relative img-fluid" style="padding-top: 80px;" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/inspirisys-small-logo.png" width="70%" class="img-relative img-fluid" style="padding-top: 55px" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/intellect.png" width="70%" style="padding-top: 75px" class="img-relative img-fluid" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/interplai1.jpg" width="100%" style="padding-top: 75px" class="img-relative img-fluid" alt="">
+                        </div>
+                    </div> -->
+            <!-- row2 -->
+            <!-- <div class="row mb-3">
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/kiness_sports_clinic.png" width="50%" style="padding-bottom: 65px" class="img-relative img-fluid" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/kloud.png" width="80%" class="img-relative img-fluid" style="padding-bottom: 20px;" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/knowurture.png" class="img-relative img-fluid" style="padding-bottom: 20px;" width="100%" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/marlabs.png" class="img-relative img-fluid" style="padding-top: 10px;" width="80%" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/maveric1.png" width="70%" class="img-relative img-fluid" style="padding-bottom: 86px" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/mobisoftseo1.jpg" style="padding-bottom: 85px;" class="img-relative img-fluid" width="90%" alt="">
+                        </div>
+                    </div> -->
+            <!-- </div> -->
+            <!-- slide-3 -->
+            <!-- <div ngxSlickItem class="slide"> -->
+            <!-- row1 -->
+            <!-- <div class="row mb-3">
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/mpokket.png" class="img-relative img-fluid" style="padding-top: 80px;" width="100%" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/mr_mrs_cart.png" width="90%" class="img-relative img-fluid" style="padding-top: 80px;" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/Netcore-new-Logo-2.png" width="80%" class="img-relative img-fluid" style="padding-top: 80px;" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/onebill-logo.png" width="70%" class="img-relative img-fluid" style="padding-top: 75px" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/opentext-vector-logo.png" width="70%" style="padding-top: 65px" class="img-relative img-fluid" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/paynext1.jpg" width="100%" style="padding-top: 70px" class="img-relative img-fluid" alt="">
+                        </div>
+                    </div> -->
+            <!-- row2 -->
+            <!-- <div class="row mb-3">
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/pearson.png" width="80%" class="img-relative img-fluid" style="padding-top: 30px" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/PTAI-Logo.webp" width="80%" class="img-relative img-fluid" style="padding-top: 30px;" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/plan_source.png" class="img-relative img-fluid" style="padding-top: 30px;" width="100%" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/purchassing-power.jpg" class="img-relative img-fluid" style="padding-top: 30px;" width="80%" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/Quadwave-Logo1.png" width="70%" class="img-relative img-fluid" style="padding-top: 30px" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/rm.png" style="padding-top: 30px;" class="img-relative img-fluid" width="40%" alt="">
+                        </div>
+                    </div> -->
+            <!-- </div> -->
+            <!-- slide-4 -->
+            <!-- <div ngxSlickItem class="slide"> -->
+            <!-- row1 -->
+            <!-- <div class="row mb-3">
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/saksoft.jpg" class="img-relative img-fluid" style="padding-top: 80px;" width="100%" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/shethink.png" width="50%" class="img-relative img-fluid" style="padding-top: 80px;" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/slk.png" width="80%" class="img-relative img-fluid" style="padding-top: 80px;" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/smallday1.jpg" width="70%" class="img-relative img-fluid" style="padding-top: 75px" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/stronger_me.png" width="50%" style="padding-top: 65px" class="img-relative img-fluid" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/synchronoss.png" width="100%" style="padding-top: 70px" class="img-relative img-fluid" alt="">
+                        </div>
+                    </div> -->
+            <!-- row2 -->
+            <!-- <div class="row mb-3">
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/tnq1.jpg" width="50%" class="img-relative img-fluid" style="padding-top: 30px" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/tyfone.png" width="80%" class="img-relative img-fluid" style="padding-top: 30px;" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/vcg.png" class="img-relative img-fluid" style="padding-top: 30px;" width="80%" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/VISA-logo.png" class="img-relative img-fluid" style="padding-top: 30px;" width="50%" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/XEBIA.png" width="80%" class="img-relative img-fluid" style="padding-bottom: 50px" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="../../../assets/images/clients/Xylem_logo.png" style="padding-top: 30px;" class="img-relative img-fluid" width="70%" alt="">
+                        </div>
+
+                    </div> -->
+            <!-- </div>
+            </ngx-slick-carousel> -->
+
+
+        </div>
+    </section>
+    <!-- clients -->
+    <app-contactus-form>
+    </app-contactus-form>
+</div>

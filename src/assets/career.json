@@ -1,0 +1,208 @@
+{
+  "software": [
+    {
+      "role": "Java Developer",
+      "description": "We are looking for experienced developers who are eager to solve complex technical problems while creating high-quality software systems with cutting-edge technologies.",
+      "location": "PAN India",
+      "qualification": "BE/BTech/Any Technical Graduation",
+      "requirements": [
+        "1+ years of experience in IT.",
+        "Experience with Java 8, Data Structure & Algorithm, Hibernate with JPA, Spring Framework (Spring IoC, Spring-MVC, Spring-REST, Spring-JPA, Spring-Boot).",
+        "Experience with database (SQL)."
+      ],
+      "nice_to_have": [
+        "Experience with frontend (HTML, CSS, JavaScript).",
+        "Experience with Object-oriented Design and Analysis, AWS, Agile methodology, Microservices."
+      ],
+      "job_descriptions": [
+        " Participation in all phases of the application development lifecycle, with an emphasis on coding and debugging.",
+        "Create functional web - based applications by writing clean code.",
+        "Software troubleshooting and debugging.",
+        "To optimize effectiveness, run UI tests.",
+        "Collaboration with front-end developers is required to incorporate user-facing aspects with server-side logic.",
+        "Collect and respond to technical and functional requirements.",
+        "Training and supporting internal teams.",
+        "Develop reusable code and libraries for later use."
+      ],
+      "image_url": "assets/images/new-images/16.png"
+    },
+    {
+      "role": "React Developer",
+      "description": "We are looking for experienced professionals who can design and develop systems in React, as well as work out technical solutions and promote best development practises.",
+      "location": "Bengaluru",
+      "qualification": "BE/BTech/Any Technical Graduation",
+      "requirements": [
+        "1+ years of experience in IT.",
+        "Experience with HTML, CSS, Bootstrap, JavaScript(ES6), React, Redux."
+      ],
+      "nice_to_have": [
+        "Experience with Isomorphic React, RESTful APIs, Build pipelines and tools, JSON Web Token, MongoDB."
+      ],
+      "job_descriptions": [
+        " Using React JS to create new user interface features.",
+        "Creating reusable front-end components and libraries for future use.",
+        "Translating designs and wireframes into high-quality code.",
+        "Focusing on improving components for enhanced efficiency across a wide range of web-capable devices and browsers.",
+        "Expertise in agile development methodologies."
+      ],
+      "image_url": "assets/images/new-images/17.png"
+    },
+    {
+      "role": "DotNet Developer",
+      "description": "We are looking for experienced professionals who can design and develop complex software systems from the scratch, as well as create project-wide technical solutions and establish and control best development practices.",
+      "location": "Bengaluru",
+      "qualification": "BE/BTech/Any Technical Graduation",
+      "requirements": [
+        "1+ years of experience in IT.",
+        "Experience with ASP.Net, C#, ADO.NET, .Net Core, RESTful API, SQL Server, Unit Testing."
+      ],
+      "nice_to_have": [
+        "Experience with Agile/Scrum, Scrum Ceremonies, and version control systems."
+      ],
+      "job_descriptions": [
+        "Software troubleshooting and debugging.",
+        "Creating reusable front-end components and libraries for future use.",
+        "Translating designs and wireframes into high-quality code.",
+        "Focusing on improving components for enhanced efficiency across a wide range of web-capable devices and browsers.",
+        "Expertise in agile development methodologies."
+      ],
+      "image_url": "assets/images/new-images/19 (1).webp"
+    },
+
+    {
+      "role": "Angular Developer",
+      "description": "We are looking for experienced Angular developers who are eager to solve complex technical problems while creating high-quality software systems with cutting-edge technologies.",
+      "location": "PAN India",
+      "qualification": "BE/BTech/Any Technical Graduation",
+      "requirements": [
+        "1+ years of experience in IT.",
+        "Experience with HTML, CSS, Bootstrap, JavaScript(ES6), TypeScript, Angular 6+."
+      ],
+      "nice_to_have": [
+        "Experience with RESTful Middle-Tier, RESTful APIs, JSON Web Token, MongoDB."
+      ],
+      "job_descriptions": [
+        "Using Angular to create new user interface features.",
+        "Creating reusable front-end components and libraries for future use.",
+        "Translating designs and wireframes into high-quality code.",
+        "Focusing on improving components for enhanced efficiency across a wide range of web-capable devices and browsers.",
+        "Expertise in agile development methodologies."
+      ],
+      "image_url": "assets/images/new-images/18 (1).webp"
+    }
+  ],
+  "Business_Development": [
+    {
+      "role": "Business Development Executive/Manager",
+      "description": "We are looking for experienced professionals who can manage the lifecycle of large software projects, promote business development best-practices, as well as possess hands-on experience in coordination and ability to bring in projects.",
+      "location": "Bangalore - Work From Office",
+      "qualification": "Any Degree",
+      "requirements": [
+        "3+ years of of hands-on experience in Business Development (IT Industry)",
+        "Excellent verbal and written communication skills"
+      ],
+      "nice_to_have": [
+        "Social networking & negotiation skills",
+        "Hands-on experience in bringing projects"
+      ],
+      "job_descriptions": [
+        "To familiarize with all products and services offered by our company.",
+        "Creating a company intro and pitch for development projects.",
+        "Pitch writing for social media and email.",
+        "Performing cold calls, email campaigns, and running social media campaigns.",
+        "Sending campaigns and setting up meetings with potential clients.",
+        "Abilities in sales negotiations.",
+        "Arranging meetings with the company's senior management for prospective clients.",
+        "Continuous follow-ups with multiple collaborators.",
+        "Solid familiarity with social media networks.",
+        "Ability to create PPTs for clients.",
+        "Attending networking events to research and connect with potential customers.",
+        "Crafting business proposals and contracts to draw in more revenue from clients.",
+        "Sending offers in response to the client's request",
+        "Negotiating with customers to obtain the best possible costs.",
+        "Making phone calls, emails, and online interactions to establish and maintain solid relationships with potential and current partners",
+        "Building and developing client portfolio, providing expert consultation to ensure repeat business",
+        "Generating new leads and clients, projects using your network of contacts"
+      ],
+      "image_url": "assets/images/new-images/34 (1).webp"
+    },
+    {
+      "role": "Jr. Business Development Executive ",
+
+      "description": "We are looking for freshers with the ability to manage the lifetime of any form of software project.  A candidate's ability to communicate company requirements and strong persuasion abilities are essential. It will be advantageous to have an influential personality since it will eventually aid in the promotion of best practices for business growth.",
+      "location": "Bangalore - Work From Office",
+      "qualification": "MBA in Marketing",
+      "requirements": ["Excellent verbal and written communication skills"],
+      "nice_to_have": [
+        "Ability to convey business needs",
+        "     Excellent social networking skills"
+      ],
+      "job_descriptions": [
+        "To familiarize with all products and services offered by our company.",
+        "Creating a company intro and pitch for development projects.",
+        "Pitch writing for social media and email.",
+        "Performing cold calls, email campaigns, and running social media campaigns.",
+        "Abilities in sales negotiations.",
+        "Arranging meetings with the company's senior management for prospective clients.",
+        "Solid familiarity with social media networks.",
+        " Ability to create PPTs for clients.",
+        "Attending networking events to research and connect with potential customers.",
+        "Sending offers in response to the client's request.",
+        "Making phone calls, emails, and online interactions to establish and maintain solid relationships with potential and current partners.",
+        "Building and developing client portfolio, providing expert consultation to ensure repeat business.",
+        "Generating new leads and clients, projects using your network of contacts."
+      ],
+      "image_url": "assets/images/new-images/Jr Business Development Executive.png"
+    }
+  ],
+
+  "IT_Recruiter": [
+    {
+      "role": "IT Recruiter",
+      "description": "We are looking for experienced IT Recruiters who can test the qualifications of a potential candidate, screen & hire them and, are proficient at sourcing, screening, reviewing, and understanding the needs of clients.",
+      "location": "Bangalore - Work From Office",
+      "qualification": "BE/BTech /Any Technical Graduation",
+      "requirements": [
+        "1+ Years of hands-on experience in IT Recruitment.",
+        "Excellent verbal and written communication skills"
+      ],
+      "nice_to_have": [
+        "Hands-on experience with various video conferencing/interviewing platforms (e.g. Teams, Zoom, Google Hangouts)",
+        "Technical expertise with an ability to understand and explain job requirements for IT roles",
+        "Experience using LinkedIn Talent Solutions to source quality candidates",
+        "Strong tenacity and ability to build a solid network"
+      ],
+      "job_descriptions": [
+        "Communicating with hiring managers to identify future job openings and the technical requirements for those jobs.",
+        "Writing job descriptions and posting to relevant media platforms.",
+        "Screening applicants for competency with the job requirements.",
+        "Source senior level, highly specialist candidates for leading global businesses.",
+        "Screening and interviewing candidates to ensure we put forward the best quality resources to clients.",
+        "Consulting with clients on overall hiring strategies and tailor approach accordingly."
+      ],
+      "image_url": "assets/images/new-images/35 (1).webp"
+    }
+  ],
+
+
+  "Suit_Up": [
+    {
+      "role": "Aspiring Software Engineers",
+      "description": "Suit-up is a career building programme. We are looking to hire Aspiring Software Engineers who have worked in ITES (IT Enabled Services -  Tech Support, Customer Support, IT Support, Application Support, Production Support, Voice/Non-voice Support etc) and willing to shift to ‘Software Development’ careers.",
+      "location": "Bangalore - Work From Office",
+      "qualification": "B.E / B.Tech / MCA / M.E / M.Tech",
+      "requirements": [
+        "Minimum 2.5 to Maximum 5 Years of experience in ITES (IT Enabled Services)",
+        "Excellent verbal and written communication skills"
+      ],
+      "nice_to_have": [],
+      "terms": [
+        "Please be aware that this is only a development opportunity and not a training programme.",
+        "To participate in this, you are not required to pay anything",
+        "After deployment, we expect the candidate to commit and serve minimum 2 years with us.",
+        "Candidate should be ready to work with either Frontend or Backend technologies, depending on company requirements."
+      ],
+      "image_url": "assets/images/new-images/Suit Up.png"
+    }
+  ]
+}
