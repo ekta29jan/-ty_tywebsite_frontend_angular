@@ -1,5 +1,4 @@
 <nav class="navbar navbar-expand-md navbar-light fixed-top">
-
   <div class="navbar-brand">
     <a class="navbar-brand" routerLink="/">
       <img
@@ -9,14 +8,17 @@
     /></a>
   </div>
 
-
-
-
-  <button class="navbar-toggler collapsed" type="button" data-target="#main-nav-1" data-toggle="collapse"
-    aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+  <button
+    class="navbar-toggler collapsed"
+    type="button"
+    data-target="#main-nav-1"
+    data-toggle="collapse"
+    aria-controls="navbarColor01"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
     <span class="navbar-toggler-icon"></span>
   </button>
-
 
   <div class="collapse navbar-collapse" id="main-nav-1">
     <!-- <ul class="navbar-nav ml-auto" >
@@ -28,14 +30,27 @@
     </ul> -->
     <ul class="navbar-nav ml-auto">
       <li class="nav-item dropdown temp nav-item-top">
-        <a data-toggle="dropdown" id="navbarDropdownMenuLink" #aboutLink aria-haspopup="true" aria-expanded="false"
+        <a
+          data-toggle="dropdown"
+          id="navbarDropdownMenuLink"
+          #aboutLink
+          aria-haspopup="true"
+          aria-expanded="false"
           [ngClass]="
             router.url.includes('about-us') ? 'nav-link-active' : 'nav-link'
-          " class="nav-link dropdown-toggle">COMPANY</a>
+          "
+          class="nav-link dropdown-toggle"
+          >COMPANY</a
+        >
         <ul class="dropdown-menu comp" aria-labelledby="navbarDropdownMenuLink">
           <li class="nav-item">
-            <a routerLink="/about-us" data-toggle="collapse" data-target=".navbar-collapse.show" fragment="company"
-              class="dropdown-item">
+            <a
+              routerLink="/about-us"
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+              fragment="company"
+              class="dropdown-item"
+            >
               About Us
             </a>
           </li>
@@ -45,32 +60,57 @@
             </a>
           </li> -->
           <li class="nav-item">
-            <a routerLink="/about-us" fragment="why" class="dropdown-item" data-toggle="collapse"
-              data-target=".navbar-collapse.show">
+            <a
+              routerLink="/about-us"
+              fragment="why"
+              class="dropdown-item"
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+            >
               Why Techno Elevate
             </a>
           </li>
           <li class="nav-item">
-            <a routerLink="/about-us" fragment="approach" class="dropdown-item" data-toggle="collapse"
-              data-target=".navbar-collapse.show">
+            <a
+              routerLink="/about-us"
+              fragment="approach"
+              class="dropdown-item"
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+            >
               Our Approach
             </a>
           </li>
           <li class="nav-item">
-            <a routerLink="/about-us" fragment="Journey" class="dropdown-item" data-toggle="collapse"
-              data-target=".navbar-collapse.show">
+            <a
+              routerLink="/about-us"
+              fragment="Journey"
+              class="dropdown-item"
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+            >
               Our Journey
             </a>
           </li>
           <li class="nav-item">
-            <a routerLink="/about-us" fragment="Brands" class="dropdown-item" data-toggle="collapse"
-              data-target=".navbar-collapse.show">
+            <a
+              routerLink="/about-us"
+              fragment="Brands"
+              class="dropdown-item"
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+            >
               Our Brands
             </a>
           </li>
           <li class="nav-item">
-            <a routerLink="/about-us" fragment="team" class="dropdown-item" data-toggle="collapse"
-              data-target=".navbar-collapse.show">
+            <a
+              routerLink="/about-us"
+              fragment="team"
+              class="dropdown-item"
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+            >
               Our Team
             </a>
           </li>
@@ -79,31 +119,56 @@
 
       <!-- services start -->
       <li class="nav-item dropdown temp2 nav-item-top">
-        <a data-toggle="dropdown" [ngClass]="
+        <a
+          data-toggle="dropdown"
+          [ngClass]="
             router.url.includes('specialized-qa')
               ? 'nav-link-active'
               : 'nav-link'
-          " #development aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link">SERVICES</a>
+          "
+          #development
+          aria-haspopup="true"
+          aria-expanded="false"
+          class="dropdown-toggle nav-link"
+          >SERVICES</a
+        >
         <ul class="dropdown-menu comp2" #aboutList>
           <li class="nav-item">
-            <a routerLink="/specialized-qa/managed-service" class="dropdown-item" data-toggle="collapse"
-              data-target=".navbar-collapse.show">Managed Services</a>
+            <a
+              routerLink="/specialized-qa/managed-service"
+              class="dropdown-item"
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+              >Managed Services</a
+            >
           </li>
           <li class="nav-item">
-            <a routerLink="/specialized-qa/professional-services" class="dropdown-item" data-toggle="collapse"
-              data-target=".navbar-collapse.show">
+            <a
+              routerLink="/specialized-qa/professional-services"
+              class="dropdown-item"
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+            >
               Professional Services
             </a>
           </li>
           <li class="nav-item">
-            <a routerLink="/specialized-qa/support-services" class="dropdown-item" data-toggle="collapse"
-              data-target=".navbar-collapse.show">
+            <a
+              routerLink="/specialized-qa/support-services"
+              class="dropdown-item"
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+            >
               Support Services
             </a>
           </li>
           <li class="nav-item">
-            <a routerLink="/specialized-qa/industry-4.0" class="dropdown-item" data-toggle="collapse"
-              data-target=".navbar-collapse.show">
+            <a
+              routerLink="/specialized-qa/industry-4.0"
+              class="dropdown-item"
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+            >
               Industry 4.0
             </a>
           </li>
@@ -113,61 +178,118 @@
       <!--
 solution start -->
       <li class="nav-item dropdown temp1 nav-item-top">
-        <a data-toggle="dropdown" [ngClass]="
+        <a
+          data-toggle="dropdown"
+          [ngClass]="
             router.url.includes('development') ? 'nav-link-active' : 'nav-link'
-          " #development aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link">SOLUTIONS</a>
+          "
+          #development
+          aria-haspopup="true"
+          aria-expanded="false"
+          class="dropdown-toggle nav-link"
+          >SOLUTIONS</a
+        >
         <ul class="dropdown-menu comp1" #aboutList>
           <li class="nav-item dropdown temp9">
-            <a href="#" data-toggle="dropdown" [ngClass]="
+            <a
+              href="#"
+              data-toggle="dropdown"
+              [ngClass]="
                 router.url.includes('development')
                   ? 'nav-link-active'
                   : 'nav-link'
-              " #development aria-haspopup="true" aria-expanded="false"
-              class="dropdown-item development-link nav-link ml-3">Development</a>
+              "
+              #development
+              aria-haspopup="true"
+              aria-expanded="false"
+              class="dropdown-item development-link nav-link ml-3"
+              >Development</a
+            >
             <ul class="dropdown-menu subdiv comp9" onclick="closedroup()">
               <li class="nav-item">
-                <a routerLink="/development/software-development" class="dropdown-item" data-toggle="collapse"
-                  data-target=".navbar-collapse.show">Software Development</a>
+                <a
+                  routerLink="/development/software-development"
+                  class="dropdown-item"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  >Software Development</a
+                >
               </li>
               <li class="nav-item">
-                <a routerLink="/development/mobile-app-development" class="dropdown-item" data-toggle="collapse"
-                  data-target=".navbar-collapse.show">Mobile App Development</a>
+                <a
+                  routerLink="/development/mobile-app-development"
+                  class="dropdown-item"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  >Mobile App Development</a
+                >
               </li>
               <li class="nav-item">
-                <a routerLink="/development/web-solution" class="dropdown-item" data-toggle="collapse"
-                  data-target=".navbar-collapse.show">
-                  Web Solution</a>
+                <a
+                  routerLink="/development/web-solution"
+                  class="dropdown-item"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                >
+                  Web Solution</a
+                >
               </li>
               <li class="nav-item">
-                <a routerLink="/development/cloud-solution" class="dropdown-item" data-toggle="collapse"
-                  data-target=".navbar-collapse.show">Cloud Solution</a>
+                <a
+                  routerLink="/development/cloud-solution"
+                  class="dropdown-item"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  >Cloud Solution</a
+                >
               </li>
               <li class="nav-item">
-                <a routerLink="/development/migration-and-re-engineering" class="dropdown-item" data-toggle="collapse"
-                  data-target=".navbar-collapse.show">
-                  Migration & Re-engineering</a>
+                <a
+                  routerLink="/development/migration-and-re-engineering"
+                  class="dropdown-item"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                >
+                  Migration & Re-engineering</a
+                >
               </li>
               <li class="nav-item">
-                <a routerLink="/development/middleware-integration" class="dropdown-item" data-toggle="collapse"
-                  data-target=".navbar-collapse.show">
+                <a
+                  routerLink="/development/middleware-integration"
+                  class="dropdown-item"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                >
                   Middleware Integration
                 </a>
               </li>
               <li class="nav-item">
-                <a routerLink="/development/eCommerce" class="dropdown-item" data-toggle="collapse"
-                  data-target=".navbar-collapse.show">
+                <a
+                  routerLink="/development/eCommerce"
+                  class="dropdown-item"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                >
                   E-Commerce Development
                 </a>
               </li>
               <li class="nav-item">
-                <a routerLink="/development/full-stack-development" class="dropdown-item" data-toggle="collapse"
-                  data-target=".navbar-collapse.show">
+                <a
+                  routerLink="/development/full-stack-development"
+                  class="dropdown-item"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                >
                   Full Stack Development
                 </a>
               </li>
               <li class="nav-item">
-                <a routerLink="/development/datascience" class="dropdown-item" data-toggle="collapse"
-                  data-target=".navbar-collapse.show">
+                <a
+                  routerLink="/development/datascience"
+                  class="dropdown-item"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                >
                   Data Science
                 </a>
               </li>
@@ -178,8 +300,12 @@ solution start -->
                     </li> -->
 
           <li class="nav-item">
-            <a routerLink="/development/it-consulting" class="dropdown-item" data-toggle="collapse"
-              data-target=".navbar-collapse.show">
+            <a
+              routerLink="/development/it-consulting"
+              class="dropdown-item"
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+            >
               IT Consulting
             </a>
           </li>
@@ -188,25 +314,44 @@ solution start -->
 
       <!-- industries start -->
       <li class="nav-item dropdown temp3 nav-item-top">
-        <a data-toggle="dropdown" [ngClass]="
+        <a
+          data-toggle="dropdown"
+          [ngClass]="
             router.url.includes('industries') ? 'nav-link-active' : 'nav-link'
-          " aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link">
+          "
+          aria-haspopup="true"
+          aria-expanded="false"
+          class="dropdown-toggle nav-link"
+        >
           INDUSTRIES
         </a>
         <ul class="dropdown-menu comp3">
           <li class="nav-item">
-            <a routerLink="/industries/banking" class="dropdown-item" data-toggle="collapse"
-              data-target=".navbar-collapse.show">
-              Banking</a>
+            <a
+              routerLink="/industries/banking"
+              class="dropdown-item"
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+            >
+              Banking</a
+            >
           </li>
           <li class="nav-item">
-            <a routerLink="/industries/insurance" class="dropdown-item" data-toggle="collapse"
-              data-target=".navbar-collapse.show">Insurance
+            <a
+              routerLink="/industries/insurance"
+              class="dropdown-item"
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+              >Insurance
             </a>
           </li>
           <li class="nav-item">
-            <a routerLink="/industries/retail-ecommerce" class="dropdown-item" data-toggle="collapse"
-              data-target=".navbar-collapse.show">
+            <a
+              routerLink="/industries/retail-ecommerce"
+              class="dropdown-item"
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+            >
               E-Commerce
             </a>
           </li>
@@ -216,49 +361,97 @@ solution start -->
             </a>
           </li> -->
           <li class="nav-item">
-            <a routerLink="/industries/retail" class="dropdown-item" data-toggle="collapse"
-              data-target=".navbar-collapse.show">
-              Retail</a>
+            <a
+              routerLink="/industries/retail"
+              class="dropdown-item"
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+            >
+              Retail</a
+            >
           </li>
           <li class="nav-item">
-            <a routerLink="/industries/health-care" class="dropdown-item" data-toggle="collapse"
-              data-target=".navbar-collapse.show">Healthcare</a>
+            <a
+              routerLink="/industries/health-care"
+              class="dropdown-item"
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+              >Healthcare</a
+            >
           </li>
           <li class="nav-item">
-            <a routerLink="/industries/education" class="dropdown-item" data-toggle="collapse"
-              data-target=".navbar-collapse.show">Education</a>
+            <a
+              routerLink="/industries/education"
+              class="dropdown-item"
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+              >Education</a
+            >
           </li>
           <li class="nav-item">
-            <a routerLink="/industries/telecom" class="dropdown-item" data-toggle="collapse"
-              data-target=".navbar-collapse.show">Telecom
+            <a
+              routerLink="/industries/telecom"
+              class="dropdown-item"
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+              >Telecom
             </a>
           </li>
           <li class="nav-item">
-            <a routerLink="/strategic-qa/technology/" class="dropdown-item" data-toggle="collapse"
-              data-target=".navbar-collapse.show">Technology</a>
+            <a
+              routerLink="/strategic-qa/technology/"
+              class="dropdown-item"
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+              >Technology</a
+            >
           </li>
         </ul>
       </li>
       <!-- industries end -->
       <li class="nav-item dropdown nav-item-top">
-        <a routerLink="/contact/global-presence" data-toggle="collapse" data-target=".navbar-collapse.show" [ngClass]="
+        <a
+          routerLink="/contact/global-presence"
+          data-toggle="collapse"
+          data-target=".navbar-collapse.show"
+          [ngClass]="
             router.url.includes('contact') ? 'nav-link-active' : 'nav-link'
-          " class="nav-link">
+          "
+          class="nav-link"
+        >
           CONTACT US
         </a>
       </li>
       <li class="nav-item dropdown temp4 nav-item-top">
-        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" [ngClass]="
+        <a
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+          class="dropdown-toggle nav-link"
+          [ngClass]="
             router.url.includes('careers') ? 'nav-link-active' : 'nav-link'
-          ">
+          "
+        >
           CAREERS
         </a>
         <ul class="dropdown-menu dropdown-menu-right comp4">
           <li class="nav-item">
-            <a routerLink="/careers" fragment="job" class="dropdown-item" data-toggle="collapse"
-              data-target=".navbar-collapse.show">Job Opportunities</a>
-            <a routerLink="/careers" class="dropdown-item" fragment="Upskill Programme" data-toggle="collapse"
-              data-target=".navbar-collapse.show">Upskill Programme</a>
+            <a
+              routerLink="/careers"
+              fragment="job"
+              class="dropdown-item"
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+              >Job Opportunities</a
+            >
+            <a
+              routerLink="/careers"
+              class="dropdown-item"
+              fragment="Upskill Programme"
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+              >Upskill Programme</a
+            >
           </li>
         </ul>
       </li>
